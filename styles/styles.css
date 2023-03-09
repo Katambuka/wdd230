@@ -55,16 +55,6 @@ h2{
     font-family: 'Roboto Serif', serif;
     padding-left: 10px;
 }
-img{
-  margin-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  float: left;
-  width: 50%;
-  height: auto;
-  box-shadow: 0 0 10px 5px rgb(15, 10, 10);
-  
-}
 
 .copy{
   color: yellow;

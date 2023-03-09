@@ -9,6 +9,24 @@
     nav ul li {
         flex: 1 1 100%;
     }
+    img{
+        margin-right: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        float: left;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 10px 5px rgb(15, 10, 10);
+      }
+      img{
+        margin-right: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        float: left;
+        width: 50%;
+        height: 400px;
+        box-shadow: 0 0 10px 5px rgb(15, 10, 10);
+      }
 
 }
 @media (min-width: 50em) and (min-height: 60em) {
