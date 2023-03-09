@@ -1,0 +1,116 @@
+
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+
+main section h2 {
+	color: #536878;
+}
+
+main section:nth-child(2) {
+  display: flex;
+  grid-column: span ;
+   margin: 0.5rem;
+}
+  body{
+    font-family: 'Roboto Serif', serif;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: linear-gradient(pink, purple);
+   
+  }
+    
+    /* Header Styles */
+    header {
+      display: flex;
+      background-color: rgba(119, 254, 175, 0.536);
+      color: rgb(10, 1, 1);
+      padding: 5px;
+      margin: 5px;
+      border-radius: 10px;
+      text-align: center;
+      align-items: normal;
+      flex-direction: column;
+    }
+    
+    header nav {
+      background-color: #ffffff;
+      width: 100%;
+      font-size: 0;
+      height: 2.6rem;
+      line-height: 2.6rem;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+      
+    }
+     
+    h1 {
+      padding: 10px;
+      font-family: 'Roboto serif' ,Arial, Helvetica, sans-serif;
+      color: rgba(0, 0, 0, 1);
+      font-size: 2.5em;
+  }
+  main {
+    display: grid;
+      padding-left: 20px;
+      font-family: 'Roboto Serif', serif;
+  }
+  .responsive li {
+      display: block;
+  }
+  
+  h2{
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgb(11, 1, 1);
+      font-family: 'Roboto Serif', serif;
+      padding-left: 10px;
+  }
+  img{
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px 5px rgb(15, 10, 10);
+  }
+  
+  .copy{
+    color: yellow;
+  }
+  
+  #time{
+    color: hsl(130, 45%, 65%);
+  }
+  
+  #lastModified {
+    text-align: center;
+    font-size: 0.95rem;
+    -webkit-text-fill-color: #feffff;
+  }
+  p {
+    font-family: Tahoma, Arial, sans-serif;
+    padding: 10px;
+  }
+  picture{
+    display: block;
+    margin-right: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+      background-color: rgb(134, 127, 127);
+      padding: 20px;
+      text-align: center;
+      /*-webkit-text-fill-color: yellow;*/
+      border-radius: 10px;
+      text-shadow:rgb(31, 23, 23, pink);
+    }
+   
+

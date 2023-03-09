@@ -1,0 +1,31 @@
+@media only screen and (min-width: 980px){
+    body{
+        font-family: 'Roboto Serif', serif;
+        margin: 0 auto;
+        margin-top: 5%;
+        background: linear-gradientr(pink, purple)
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+	/* This is unncessary !!! The flow is set and the template is set already */
+	main section:nth-child(1) {
+	  grid-column: 1/2;
+  }
+	main section:nth-child(2) {
+	  grid-column: 2/3;
+		grid-row: 1/2;
+  }
+	/*************************************/
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+  main section picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+  }
+}

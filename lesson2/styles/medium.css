@@ -1,0 +1,40 @@
+@media only screen and (max-width: 768px)  {
+	header nav {
+		height: 2rem;
+		line-height: 5rem;
+	}
+	h1 {
+		padding: 10px;
+		font-family: 'Roboto serif', cursive;
+		color: rgb(218, 81, 195);
+		font-size: 2.5em;
+		text-align: center;
+	}
+	body{
+		background-color: whitesmoke;
+		display: grid;
+		align-items: stretch;
+	}
+	main{
+		font-display: auto;
+		font-size: auto;
+		background: linear-gradient(pink,rgb(251, 227, 251));
+		border-radius: 7px;
+		justify-items: center;
+		align-items: normal;
+	}
+	.container{
+		display: inline;
+		padding-left: 10px;
+	}
+	section:nth-child(3) {
+		grid-column: span 1;
+	}
+	/* Tablet Views ******************************/
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+	

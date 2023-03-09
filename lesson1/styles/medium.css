@@ -1,0 +1,23 @@
+@media only screen and (max-width: 32.5em){
+    h1 {
+        padding-left: 50px;
+        font-family: 'Roboto serif', cursive;
+        color: rgb(21, 173, 243);
+        font-size: 2.5em;
+    }
+    header nav ul{
+        display: grid;
+    }
+
+    nav ul {
+        display: grid;
+    }
+    
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    footer ul{
+        display: grid;
+    }
+    
+  }
