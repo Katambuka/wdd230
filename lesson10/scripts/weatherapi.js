@@ -33,3 +33,6 @@ function  displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
   }
+
+  // last modified date
+document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
