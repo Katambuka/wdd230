@@ -488,11 +488,11 @@ hr {
   margin: 10px 0;
 }
 
-.footer-content {
+/*.footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}*/
 
 .socialmedia {
   list-style: none;
@@ -876,17 +876,17 @@ img[data-src] {
   text-indent:2px;
   color: black;
 }
-.more {
+button {
   border-radius: 10px;
   max-width: fit-content;
   color: black;
-  background-color: yellow;
+  background-color: rgb(231, 231, 93);
   border: none;
   text-align: center;
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-.more:hover {
+button:hover {
   color: tomato;
   transition: 0.4s;
 }
