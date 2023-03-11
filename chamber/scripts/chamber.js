@@ -16,7 +16,6 @@ function showButton() {
 }
 
 hamburgerBtn.addEventListener('click', toggleMenu);
-closeBtn.addEventListener('click', toggleMenu);
 window.addEventListener('resize', showButton);
 window.addEventListener('load', showButton);
 
