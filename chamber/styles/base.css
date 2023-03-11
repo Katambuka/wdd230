@@ -119,9 +119,12 @@ nav button {
 .noDisplay {
   display: none;
 }
+
 h1 h2 {
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  text-shadow: 2px 2px 5px rgb(11, 1, 1);
 }
 
 h3,
@@ -133,7 +136,7 @@ p,
 a {
   font-family: Roboto, Helvetica, sans-serif;
 }
-
+*/
 /*section 1*/
 .brand {
     display: flex;
@@ -145,22 +148,22 @@ a {
     margin: 20px;
 }
 img{
-    height: 400px;
-    width: 100%;
-  }
-  #weather-icon {
-    width: 100px;
-    height: 100px;
-    box-shadow: 2px 2px 5px rgba(10, 103, 23, 0.504);
-    border-radius: 10px;
-    transition: all 0.2s ease-in-out;
-    background: linear-gradient(purple white) ;
-    justify-content: center;
-  }
+  height: 400px;
+  width: 100%;
+}
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 5px rgba(10, 103, 23, 0.504);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(purple white) ;
+  justify-content: center;
+}
 .active {
     background-color: rgba(0,0,0,0.6);
     color: white;
-}*/
+}
 
 /*meet and greet banner*/
 #meetAndGreet {
@@ -195,21 +198,24 @@ main div {
 
 main section,
 main div {
-  background: linear-gradient(rgb(219, 211, 213), rgb(229, 229, 244));
-  border: 1px solid rgb(246, 202, 239);
+  background: linear-gradient(rgb(213, 173, 183), rgb(18, 128, 237));
+  border: 1px solid rgb(234, 177, 224);
+  box-shadow: #e7d4e7;
 }
 
 main section p,
 main div p {
-  color: #61d584;
+  color: white;
   padding: 5%;
+ font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600px;
 }
 
 main section h2 {
   color: rgba(0, 0, 0, 0.917);
   margin-left: 10px;
   box-shadow: #e7f0f0;
-  font-weight: 500;
+  font-weight: 500px;
 }
 
 /*Home Styles*/
@@ -221,7 +227,7 @@ main section h2 {
 #hero-banner h2 {
   position: absolute;
   color: #160b0b;
-  text-shadow: 2px 2px 5px #0d0a0d;
+  text-shadow: 2px 2px 5px #ece0ec;
   margin-left: 3%;
   font-size: 1.5rem;
   font-family: 'Courier New', Courier, monospace;
@@ -249,10 +255,17 @@ main section h2 {
 #hero-banner img {
   margin-bottom: -0.25rem;
 }
+#join {
+  text-align: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
 
 .event h3 {
   font-size: 110%;
-  color: #230323;
+  color: #0c060c;
+  padding:5px;
+  margin: 10px 0;
 }
 
 .event p a {
@@ -283,13 +296,15 @@ main section h2 {
   justify-content: center;
   display: flex;
 }
-
 .weather div p {
   font-size: 150%;
+  color:white;
 }
 
 .weather p {
   margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
 }
 
 .spotlight {
@@ -299,7 +314,7 @@ main section h2 {
 }
 
 .spotlight img {
-  max-width: 50%;
+  max-width: 100%;
   margin: 5px 0;
 }
 
@@ -656,7 +671,7 @@ section p {
 }
 
 section img {
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 /* Footer Styles */
@@ -845,5 +860,19 @@ img[data-src] {
   text-align: center;
   text-indent:2px;
   color: black;
-  
 }
+.more {
+  border-radius: 10px;
+  max-width: fit-content;
+  color: black;
+  background-color: yellow;
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.more:hover {
+  color: tomato;
+  transition: 0.4s;
+}
+
