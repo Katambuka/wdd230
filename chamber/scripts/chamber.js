@@ -1,5 +1,6 @@
-const hamburgerBtn = document.querySelector('hamburgerBtn');
-const navigation = document.querySelector('navigation');
+const hamburgerBtn = document.querySelector('.hamburgerBtn');
+const closeBtn = document.querySelector('.closeBtn');
+const navigation = document.querySelector('.navigation');
 
 function toggleMenu() {
   navigation.classList.toggle('show');
@@ -15,8 +16,10 @@ function showButton() {
 }
 
 hamburgerBtn.addEventListener('click', toggleMenu);
+closeBtn.addEventListener('click', toggleMenu);
 window.addEventListener('resize', showButton);
 window.addEventListener('load', showButton);
+
 
 const datefield = document.querySelector(".date");
 //const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.

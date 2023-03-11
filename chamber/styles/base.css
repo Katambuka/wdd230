@@ -545,6 +545,21 @@ nav ul.open {
   padding: 5px;
   margin: 0.1em;
 }
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .navigation.active {
+    display: block;
+  }
+  .closeBtn {
+    display: none;
+  }
+  .navigation.active ~ .closeBtn {
+    display: block;
+  }
+}
+
 
 /*---------------------discover.html------------------------------*/
 /* Global Styles */
