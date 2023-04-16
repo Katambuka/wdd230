@@ -1,0 +1,19 @@
+div {
+   background-color: rgb(98, 177, 234);
+   font-size: 20px;
+   color: yellow;
+   font-family: sans-serif;
+   border: 1px outset rgb(218, 218, 218);
+   line-height: 20px;
+   padding: 0 6px;
+   width: 120px;
+   text-align: center;
+   border-radius: 5px;
+   margin-right: 10px;
+   cursor: pointer;
+   display: inline-block;
+   justify-content: center;
+ }
+ div:hover, div:focus {
+   font-weight: bold;
+ }
