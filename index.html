@@ -2,51 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="This page displays the lessons from lesson 2 to 11">
     <meta name="author" content="Nathank">
     <meta name="keywords" content="web front end">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/lesson1/styles/normalize.css">
+    <link rel="stylesheet" href="/lesson1/styles/styles.css">
+    <link rel="stylesheet" href="/lesson1/styles/large.css">
+    <link rel="stylesheet" href="/lesson1/styles/medium.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
     <title>WDD 230 Assignment Portal</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <picture><img src="#" alt="My profile photo"></picture>
-        <h1>Kanyesigye Nathane</h1>
+        <picture
+          ><img src="/lesson1/images/2023-1.webp" alt="My profile photo" class="profile-photo"></picture>
+        <h1 class="header-title">Kanyesigye Nathane</h1>
       </div>
     </header>
-    <main>
+    <main class="main-content">
       <hr>
-      <h2>WDD 230: Assignment portal</h2>
-      <nav>
+      <h2 class="main-title">WDD 230: Assignment portal</h2>
+      <nav class="main-nav">
         <ul>
-          <li>Lesson 02:<a href="#" target="blank"></a></li>
-          <li>Lesson 03:<a href="#" target="blank"></a></li>
-          <li>Lesson 04:<a href="#" target="blank"></a></li>
-          <li>Lesson 05:<a href="#" target="blank"></a></li>
-          <li>Lesson 07:<a href="#" target="blank"></a></li>
-          <li>Lesson 08:<a href="#" target="blank"></a></li>
-          <li>Lesson 09:<a href="#" target="blank"></a></li>
-          <li>Lesson 10:<a href="#" target="blank"></a></li>
-          <li>Lesson 11:<a href="#" target="blank"></a></li>
+          <li class="nav-item">
+            Lesson 02:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 03:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 04:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 05:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 07:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 08:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 09:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 10:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
+          <li class="nav-item">
+            Lesson 11:<a href="#" target="_blank" class="nav-link">Title</a>
+          </li>
         </ul>
       </nav>
-      <p>Some lessons may need more than one activity/assignment link</p>
-    </main>
-    <hr>
-    <footer>
-      <p>
-        &copy;flellaharvest@2023 | Last Modified in
-        <span id="lastmodified"></span>
+      <p class="main-paragraph">
+        Some lessons may need more than one activity/assignment link
       </p>
+      <hr class="main-hr">
+    </main>
+    <footer class="footer">
+        &copy; Nathane K @BYUI 2023 | Last Modified on: <span id="lastmodified" class="footer-modified"></span>
     </footer>
     <script src="/lesson1/script/main.js"></script>
   </body>

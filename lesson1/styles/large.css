@@ -1,0 +1,24 @@
+@media only screen and (min-width: 992px){
+   h1 {
+     font-size: 48px;
+   }
+   
+   nav li {
+     margin-bottom: 15px;
+   }
+   
+   footer {
+     font-size: 16px;
+   }
+      .header-title {
+        font-size: 24px;
+      }
+    
+      .nav-item {
+        margin-bottom: 10px;
+      }
+    
+      .main-paragraph {
+        font-size: 18px;
+      }
+    }
