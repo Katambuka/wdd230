@@ -65,6 +65,7 @@ a {
   flex-direction: column;
   color: #fff;
   border-radius: 1%;
+  box-shadow: 0 0 10px 5px rgb(15, 10, 10);
 }
 
 .profile-photo {
@@ -132,6 +133,7 @@ hr {
   text-align: center;
   border-radius: 3%;
   color: #fff;
+  box-shadow: 0 0 10px 5px rgb(15, 10, 10);
 }
 
 .footer-modified {
