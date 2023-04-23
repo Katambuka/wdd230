@@ -141,3 +141,6 @@ hr {
   font-weight: bold;
   color: rgb(240, 240, 94);
 }
+#year {
+  color: yellow;
+}
