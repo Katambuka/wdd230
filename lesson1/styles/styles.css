@@ -84,6 +84,7 @@ a {
 .main-content {
   margin: 0;
   padding: 16px;
+  background: rgba(238, 238, 238, .5);
 }
 
 .main-title {
