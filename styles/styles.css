@@ -80,6 +80,10 @@ a {
   margin-left: 20px;
   font-size: 24px;
 }
+picture {
+  float: left;
+  margin: 0;
+}
 
 .main-content {
   margin: 0;
