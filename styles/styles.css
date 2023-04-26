@@ -71,7 +71,6 @@ a {
 .profile-photo {
   width: 200px;
   height: 200px;
-  border-radius: 10%;
   border-style: none;
   box-shadow: 0 0 10px 5px rgb(15, 10, 10);
   margin: 10px;
@@ -88,12 +87,11 @@ picture {
 .main-content {
   margin: 0;
   padding: 16px;
-  background: rgba(238, 238, 238, .5);
 }
 
 .main-title {
   font-size: 28px;
-  margin: 0;
+  margin-bottom: 5%;
   padding: 0;
   text-shadow: 2px 2px 5px rgb(11, 1, 1);
 }
@@ -116,7 +114,7 @@ hr {
 .nav-link {
   display: block;
   padding: 5px;
-  color: #007bff;
+  color: #0056b3;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
