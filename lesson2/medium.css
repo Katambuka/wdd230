@@ -23,6 +23,9 @@
    grid-template-rows: auto auto auto;
    grid-gap: 20px;
  }
+ main section:nth-child(3) {
+   grid-column: span 2;
+}
  
  .thirds {
    grid-column: 1/2;
