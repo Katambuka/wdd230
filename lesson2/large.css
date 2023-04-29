@@ -1,0 +1,33 @@
+@media only screen and (min-width: 980px) { 
+   main {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   margin: 20px;}
+   .main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+    }
+    
+    .thirds {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    
+    .visual {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    
+    .parc {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    
+    .section h3 {
+      font-size: 32px;
+    }
+
+}
