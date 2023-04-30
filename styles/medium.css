@@ -25,6 +25,9 @@
       float: left;
     }
     .header-title {
-      margin-left: 0 10% 20% 70%;
+      font-family: cursive;
+      margin-left: 15% 10% 20% 70%;
+      display: flex;
+      text-align: center;
     }
  }
