@@ -19,7 +19,20 @@
    padding: 20px;
    text-align: center;
  }
- 
+ .head {
+  display: grid;
+  position: fixed;
+  z-index: 12;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  border-bottom: 0.0625rem solid #0056b3;
+  padding: 0 0.75rem;
+  width: 100vw;
+  height: 6.678rem;
+}
  /* Style the main section */
  main {
    display: flex;
@@ -42,6 +55,7 @@
   float: left;
   width: 100%;
   height: auto;
+  transition: margin-right 2s .5s;
 }
 
 .section {
