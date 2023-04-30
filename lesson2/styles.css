@@ -16,23 +16,14 @@
  header {
    background-color: #82007d;
    color: #fff;
-   padding: 20px;
+   padding: 0 0.375rem;
    text-align: center;
+   position: fixed;
+   width: 100vw;
+   top: 0;
+   left: 0;
+   border-bottom: 0.0225rem solid #0056b3;
  }
- .head {
-  display: grid;
-  position: fixed;
-  z-index: 12;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  top: 0;
-  left: 0;
-  border-bottom: 0.0625rem solid #0056b3;
-  padding: 0 0.75rem;
-  width: 100vw;
-  height: 6.678rem;
-}
  /* Style the main section */
  main {
    display: flex;
@@ -55,7 +46,6 @@
   float: left;
   width: 100%;
   height: auto;
-  transition: margin-right 2s .5s;
 }
 
 .section {
@@ -67,9 +57,13 @@
   max-width: 100%;
 }
 
-.parc {
+.parc,.thirds,.visual {
   text-align: center;
   display: block;
+  margin-top: 1.5rem;
+}
+.visual {
+  margin-top: 20%;
 }
 #lastmodified {
   color: #fff;
