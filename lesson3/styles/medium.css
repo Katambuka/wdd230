@@ -1,3 +1,15 @@
-@media only screen and (min-width: 32.5em) {
-   
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main img {
+		display: block;
+	}
 }
