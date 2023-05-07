@@ -22,22 +22,3 @@
 		justify-content: flex-start;
 	 }
 }
-@media only screen and (max-width: 767px) {
-	/* styles for small screens */
-	.container {
-	  width: 100%;
-	  padding: 0 20px;
-	}
-	.menu-left {
-	  display: block;
-	}
-	.nav-toggle {
-	  display: block;
-	}
-	.menu-right {
-	  display: flex;
-	  justify-content: space-between;
-	}
-	.head{position: fixed;}
- }
- 
