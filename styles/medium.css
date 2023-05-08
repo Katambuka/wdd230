@@ -11,7 +11,7 @@
      font-size: 14px;
    }
    .header-title {
-      font-size: 22px;
+      font-size: 32px;
     }
   
     .nav-item {
@@ -23,10 +23,11 @@
     }
     .container img {
       float: left;
+      margin: 0 0 1em 1em;
     }
     .header-title {
       font-family: cursive;
-      margin-left: 15% 10% 20% 70%;
+      margin: 2em 0 0 2em;
       display: flex;
       text-align: center;
     }
