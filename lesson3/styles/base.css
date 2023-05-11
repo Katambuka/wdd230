@@ -224,7 +224,7 @@ nav button {
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  color: #555;
+  color: #000;
 }
 nav {
   background-color: transparent;
@@ -248,7 +248,8 @@ nav ul li a:hover {
   color: #fff;
 }
 nav ul {display: none;}
-nav ul.open {display: block;}
+nav ul.open {display: block;
+background-color: #005663;}
 
 #hamburgerBtn span:nth-child(1) {display: block;}
 #hamburgerBtn span:nth-child(2) {display: none;}
