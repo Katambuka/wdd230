@@ -22,5 +22,28 @@
 	  justify-content: flex-end;
 	  flex: 1;
 	}
+	table {
+		display: table;
+		width: 100%;
+	 }
+
+	 table thead {
+		display: table-header-group;
+	 }
+
+	 table tbody {
+		display: table-row-group;
+	 }
+
+	 table tr {
+		display: table-row;
+	 }
+
+	 table th,
+	 table td {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+	 }
  }
  

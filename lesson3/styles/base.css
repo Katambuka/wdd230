@@ -202,4 +202,56 @@ article p:first-of-type {
 article p:last-of-type {
   margin-bottom: 0;
 }
+table td,
+table th {
+  display: table;
+}
 
+table td {
+  border-top: none;
+}
+
+table td:first-child {
+  padding-top: 1rem;
+}
+
+table td:last-child {
+  padding-bottom: 1rem;
+}
+/*--------------Hamburger button-----------------------*/
+nav button {
+  margin: .2rem 2vw;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #555;
+}
+nav {
+  background-color: transparent;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  display: block;
+  padding: .5rem 2vw;
+  text-decoration: none;
+  color: #333;
+}
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
