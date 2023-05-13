@@ -2,9 +2,6 @@
 	nav a {
 		font-size: 1.3rem;
 	}
-}
-@media only screen and (min-width: 1024px) {
-	/* styles for large screens */
 	.container {
 	  width: 960px;
 	  margin: 0 auto;

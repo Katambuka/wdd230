@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+   <meta charset="UTF-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="This page displays the lessons from lesson 2 to 11">
+   <meta name="author" content="Nathank">
+   <meta name="keywords" content="web front end">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="stylesheet" href="styles/medium.css" >
+   <link rel="stylesheet" href="styles/large.css" >
+   <link rel="preconnect" href="https://fonts.googleapis.com" >
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
+   <title>Chamber site plan home page</title>
+ </head>
+ <body>
+   <header class="head">
+      <div class="container">
+        <nav id="navigation">
+          <a href="index.html" class="logo">Chamber of Commerce</a>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav" class="menu-left">
+            <li><a href="#discover.html">Discover</a></li>
+            <li><a href="#join.html">Join</a></li>
+            <li><a href="#directory.html">Directory</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+   </header>
+   <div class="noDisplay" id="meetAndGreet">
+     <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+   </div>
+   <main class="home-grid">
+     <section id="hero-banner">
+       <a href="join.html">Join the Chamber</a>
+       <h2>Welcome to Dubai</h2>
+       <picture>
+         <img>
+       </picture>
+       <picture>
+        <img>
+       </picture>
+     </section>      
+     <section class="event">
+       <h2>Free Violent community fair</h2>
+       <h3>Dubai creed Hotel Deira</h3>
+       <p> Come attend the event, learn of your rights, how to fix visa issual problems
+       <a href="join.html" aria-label="Learn more about joining the Dubai Chamber of Commerce"> Learn more</a>....</p>
+     </section>
+     <section class="weather">
+       <h3>Current Weather in Dubai</h3>
+       <figure>
+         <img id="weather-icon" src="#" alt="">
+         <figcaption id="condition"></figcaption>
+       </figure>
+       <hr>
+       <p>Current temperature: <span id="current-temp"></span> &deg;C</p>
+       <p>Wind speed: <span id="windSpeed"></span> km/h</p>
+       <p>Wind chill: <span id="windChill"></span> &deg;C</p><hr>
+     </section>
+     <section class="news">
+       <h2>News Release</h2>
+       <p>
+         <a href="https://wam.ae/en/details/1395303133616">Dubai Chamber of Commerce introduces Business Sectors Platform to Boost Efficiency and Impact</a>
+       </p>
+     </section>
+     <div class="spotlight">
+       <section class="spotlight1">
+         <h3>Property Investment</h3>
+         <picture>
+            <img>
+         </picture>
+         <h4>"Make your money work for you!"</h4>
+         <h5>Visit Virtual Zone for all your business needs</h5>
+         <hr>
+         <p>
+           <a href="https://virtualzone.ae" style="color:rgb(210, 247, 23)">Dubai Virtual Zone</a>
+         </p>
+         <p>tel +971-1000-1000</p>
+       </section>
+       <section class="spotlight2">
+         <h3>Entrepreneurs Seminar</h3>
+         <picture>
+           <img>
+         </picture>
+         <h4> Learn how to grow your business with this instructional seminar. </h4>
+         <hr>
+         <p>
+           <a href="https://virtualzone.ae">virtualzones.ae</a>
+         </p>
+         <p>tel +971-1000-1000</p>
+       </section>
+       <section class="large-only">
+         <h3>Innovate the Future</h3>
+         <picture>
+           <img>
+         </picture>          
+         <h4>"Reach for the stars, with the technology of the future."</h4>
+         <p>the future of Dubai is likely to be characterized by continued growth and development in a variety of areas, including technology, sustainability, tourism, and entrepreneurship.</p>
+         <hr>
+         <p>greetings@innovatethefuture.ae</p>
+         <p>+971-9000-9000 | www.gov.ae</p>
+       </section>
+     </div>
+     <div class="medium-display" id="join">
+       <div>
+         <a href="join.html">Join Us</a><button>Join Us</button>        
+       <p> Discover how to join the chamber of commerce and how it will benefit your organization! </p>
+     </div>
+     <div id="visits"></div>
+     <div id="today"></div>
+     <hr>
+     </div>
+   </main>
+   <footer>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/profile.php?id=100063537615114" class="fab fa-facebook" aria-label="Facebook"></a></li>
+        <li><a href="https://www.twitter.com/katambuka" class="fab fa-twitter" aria-label="Twitter"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCU3sl146_ACeJ55ZSMMXTqQ" class="fab fa-youtube" aria-label="YouTube"></a></li>
+        <li><a href="https://instagram.com/nathank2?igshid=ZmZhODViOGI=" class="fab fa-instagram" aria-label="Instagram"></a></li>
+      </ul>
+      &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI.
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
