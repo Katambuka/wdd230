@@ -12,6 +12,7 @@ function toggleMenu() {
     year: "numeric"
   };
   document.getElementById('lastmodified').textContent = new Date().toLocaleDateString('en-US', options)
+  document.getElementById('date-now').textContent = new Date().toLocaleDateString('en-US', options)
   const currentYear = new Date().getFullYear();
   document.getElementById('year').textContent = currentYear;
   

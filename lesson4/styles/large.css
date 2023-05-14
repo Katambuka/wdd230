@@ -1,66 +1,66 @@
 
-@media only screen and (min-width: 64rem) {
-   /*Home Styles*/
-   .home-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
-    grid-template-rows: auto auto auto;
-    gap: 15px;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-#hero-banner {
-    grid-column: 2/3;
-    grid-row: 1/3;
-}
-
-#hero-banner a {
-    bottom: 15%;
-    right: 10%;
-}
-
-#hero-banner picture img {
-    height: 500px;
-    width: 100%;
-    display: block;
-}
-
-.event {
-    grid-row: 1/2;
-    margin-right: 0;
-}
-
-.weather {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    color: green;
-}
-
-#join {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.news {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.spotlight {
+@media only screen and (min-width: 48em) {
+  body {
+    margin-top: 10%;}
+  nav button {
+    display: none;
+ }
+ nav ul#primaryNav {
     display: flex;
-    flex-direction: column;
-    grid-column: 3/4;
-    grid-row: 1/4;
-    box-sizing: border-box;
-}
+    margin-left: 2vw;
+    justify-content: center;
+ }
+ nav ul li a {
+    border: none;
+ }
+  .section-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 
-.spotlight section {
-    margin: 0;
-}
+  .sectionA {
+    grid-area: 1 / 1 / 3 / 2;
 
-.large-only {
+    padding: 110px;
+  }
+  .sectionB {
+    grid-area: 3 / 1 / 5 / 2;
+    padding: 110px;
+  }
+
+  .sectionC {
+    grid-area: 5 / 1 / 7 / 2;
+    padding: 110px;
+  }
+  .sectionD {
+    grid-area: 1 / 2 / 5 / 4;
+    padding: 230px;
+  }
+  .sectionE {
+    grid-area: 5 / 2 / 7 / 4;
+    padding: 120px;
+    margin-top: -10px;
+  }
+  .sportlights {
+    border: solid #0056b3;
+    grid-area: 1 / 4 / 7 / 4;
+    padding: 20px 15px;
+
+}
+  .sectionF {
+    grid-area: 1 / 1 / 3 / 5;
+    padding: 100px ;
+  }
+  .sectionG {
+    grid-area: 3 / 1 / 5 / 5;
+    padding: 100px ;
+  }
+  .sectionH {
+    grid-area: 5 / 1 / 7 / 5;
     display: block;
-}
+    padding: 100px ;
+    border: solid #0056b3;
+  }
+
 } 
