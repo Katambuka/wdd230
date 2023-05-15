@@ -8,6 +8,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin-top: 12%;
   margin-bottom: 6%;
+  max-width: 900vw;
 }
 /* Style the header */
 header {
@@ -102,7 +103,10 @@ p {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
+main {
+  margin: 0 auto;
+  padding: 20px;
+}
 .menu-left li {
   margin-left: 20px;
 }

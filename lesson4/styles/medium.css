@@ -1,22 +1,5 @@
 @media only screen and (min-width: 37.5em) {
-  nav button {
-    display: none;
- }
- nav ul#primaryNav {
-    display: flex;
-    margin-left: 2vw;
-    justify-content: center;
- }
- nav ul li a {
-    border: none;
- }
-  nav {
-    flex-direction: row;
-  }
   
-  nav a {
-    font-size: 1.1rem;
-  }
   .section-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
