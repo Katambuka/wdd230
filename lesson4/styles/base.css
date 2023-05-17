@@ -6,14 +6,13 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  margin-top: 12%;
+  margin-top: 0;
   margin-bottom: 6%;
-  max-width: 900vw;
+  background-color: #fefefe;
 }
 /* Style the header */
 header {
   color: #fff;
-  padding: 0.75rem;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -22,8 +21,11 @@ header {
   border-bottom: 0.0225rem solid #0056b3;
 }
 header{
-  background-color: #ffffff;
-  height: auto;
+  background-color: #fff;
+  padding: 20px;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -32,14 +34,14 @@ header{
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
 }
 .current-date {
   margin: 0 auto;
- background-color: #0056b3;
+  background-color: #0056b3;
   width: 100%;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
   border-radius: 3px;
   letter-spacing: 1px;
@@ -63,7 +65,7 @@ nav {
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 nav ul li a {
   display: block;
@@ -78,7 +80,7 @@ nav ul li a:hover {
   color: #fff;
 }
 nav ul {display: none;}
-nav ul.open {display: block;
+nav ul.open {display: inline;
 background-color:#0056b3 ;}
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -103,10 +105,16 @@ p {
   font-size: 16px;
   margin-bottom: 10px;
 }
-main {
-  margin: 0 auto;
+.page-content {
+  margin: 20px auto;
+  max-width: 100%;
   padding: 20px;
 }
+main {
+  margin-top: 20px auto;
+  padding: 20px;
+}
+
 .menu-left li {
   margin-left: 20px;
 }
@@ -126,7 +134,7 @@ main {
 }
 .socialmedia {
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
   margin-bottom: 20px;
 }
 
@@ -145,6 +153,7 @@ main {
 }
 .socialmedia li a:hover {
   color: #007bff;
+  transition: .3s;
 }
 
 /* Mobile */
@@ -153,82 +162,75 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: .5em;
+  margin: 0;
+  padding: 20px;
 }
 
 .sectionD {
   grid-area: 1 / 1 / 2 / 5;
   padding: 100px;
   border: solid #0056b3;
+  margin-top: auto;
+  margin-top: 150px;
 }
+
 .sectionA {
   grid-area: 2 / 1 / 3 / 5;
-  padding: 30px;
+  padding: 70px;
   border: solid #0056b3;
 }
 .sectionB {
   grid-area: 3 / 1 / 4 / 5;
-  padding: 30px;
+  padding: 70px;
   border: solid #0056b3;
+}
+.sectionC {
+  border: solid #0056b3;
+  grid-area: 5 / 1 / 6 / 5;
+  padding: 70px; ;
 }
 .sectionE {
   grid-area: 4 / 1 / 5 / 5;
-  padding: 100px;
+  padding: 70px;
   border: solid #0056b3;
-}
-.spotlights {
-    border: solid #0056b3;
-    padding: 50px;
-    grid-area: 6 / 1 / 7 / 5;
 }
 .sectionF {
   grid-area: 6 / 1 / 5 / 5;
-  padding: 115px;
+  padding: 70px;
   border: solid #0056b3;
 }
 .sectionG {
   grid-area: 7 / 1 / 7 / 5;
-  padding: 120px;
+  padding: 70px;
+  border: solid #0056b3;
+}
+.sectionH {
+  grid-area: 5 / 1 / 7 / 5;
+  padding: 70px ;
   border: solid #0056b3;
 }
 
-.sectionC {
-  display: none;
-}
-.sectionH {
-  display: none;
-}
-.sectionD,
-.sectionE {
-padding: 50px;
-}
-.sectionA,
-.sectionB {
-padding: 20px;
-}
 .spotlights {
   padding: 30px;
   }
   .sectionF {
-  padding: 60px;
+  padding: 70px;
   }
   .sectionG {
   padding: 70px;
   }
-  .sectionC,
-  .sectionH {
-  display: none;
-  }
-
   footer {
     color: #000;
     padding: 2rem;
     text-align: center;
   }
-  
   .footer-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
   } 
   .footer-container img, header img {
     height: 50px;
@@ -250,15 +252,7 @@ footer {
   padding: 20px 0;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .footer-container div {
-  flex: 1;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -277,17 +271,11 @@ footer {
   flex: 1;
   text-align: center;
   margin-bottom: 10px;
+  border: solid #0056b3;
 }
 
 iframe {
   max-width: 100%;
   height: auto;
 }
-/* Media queries */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
-}
-
   
