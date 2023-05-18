@@ -71,6 +71,7 @@ nav ul li a {
   display: block;
   padding: .5rem 2vw;
   text-decoration: none;
+  color: #fff;
 }
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
@@ -115,23 +116,6 @@ main {
   padding: 20px;
 }
 
-.menu-left li {
-  margin-left: 20px;
-}
-
-.menu-left li a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.menu-left li a:hover {
-  color: #0077b5;
-}
 .socialmedia {
   list-style-type: none;
   padding: 5px;

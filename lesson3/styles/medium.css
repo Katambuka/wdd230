@@ -32,4 +32,35 @@
    nav ul li a {
       border: none;
    }
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	 }
+	 
+	 .menu-left {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+	 }
+	 
+	 .menu-left li {
+		margin-left: 20px;
+	 }
+	 
+	 .menu-left li a {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #000;
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
+	 }
+	 
+	 .menu-left li a:hover {
+		color: #0077b5;
+	 }
 }
