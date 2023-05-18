@@ -1,35 +1,40 @@
-
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
   body {
-    margin-top: 10%;}
+    margin-top: 10%;
+  }
   nav button {
     display: none;
- }
- nav ul#primaryNav {
+  }
+  nav ul#primaryNav {
     display: flex;
     margin-left: 2vw;
     justify-content: center;
- }
- nav ul li a {
+  }
+  nav ul li a {
     border: none;
- }
- .menu-left li {
-  margin-left: 20px;
-}
+  }
+  .menu-left li {
+    margin-left: 20px;
+  }
 
-.menu-left li a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
+  .menu-left li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
 
-.menu-left li a:hover {
-  color: #0077b5;
-}
+  .menu-left li a:hover {
+    color: #0077b5;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+  }
   .section-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -55,7 +60,7 @@
     grid-area: 1 / 2 / 5 / 4;
     padding: 230px;
     margin-top: 37px;
-}
+  }
   .sectionE {
     grid-area: 5 / 2 / 7 / 4;
     padding: 120px;
@@ -65,19 +70,19 @@
     grid-area: 1 / 4 / 7 / 4;
     padding: 20px;
     margin-top: 37px;
-}
+  }
   .sectionF {
     grid-area: 1 / 1 / 3 / 5;
-    padding: 110px ;
+    padding: 110px;
   }
   .sectionG {
     grid-area: 3 / 1 / 5 / 5;
-    padding: 110px ;
+    padding: 110px;
   }
   .sectionH {
     grid-area: 5 / 1 / 7 / 5;
     display: block;
-    padding: 110px ;
+    padding: 110px;
     border: solid #0056b3;
   }
   .footer-container {
@@ -87,10 +92,9 @@
     margin: 0;
     align-items: center;
     padding: 20px;
-  } 
+  }
   .page-content {
     margin: 20px auto;
     padding: 20px;
+  }
 }
-
-} 
