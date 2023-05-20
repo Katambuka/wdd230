@@ -9,8 +9,7 @@ body {
   margin-bottom: 6%;
   background-color: #fefefe;
 }
-/* Style the header */
-header {
+  header {
   color: #fff;
   text-align: center;
   position: fixed;
@@ -45,6 +44,8 @@ header {
   border-radius: 3px;
   letter-spacing: 1px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 10px;
 }
 /*-------hamburgerBtn------------*/
 nav button {
