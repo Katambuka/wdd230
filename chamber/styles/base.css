@@ -34,19 +34,6 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-.current-date {
-  margin: 0 auto;
-  background-color: #0056b3;
-  width: 100%;
-  color: #fff;
-  padding: 20px;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  margin-top: 10px;
-}
 /*-------hamburgerBtn------------*/
 nav button {
   margin: 0.2rem 2vw;
@@ -94,6 +81,17 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(2) {
   display: block;
 }
+.current-date {
+  background-color: #0056b3;
+  width: 100%;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 0;
+}
 
 h1 {
   font-size: 26px;
@@ -118,11 +116,6 @@ p {
   max-width: 100%;
   padding: 20px;
 }
-main {
-  margin-top: 20px;
-  padding: 20px;
-}
-
 .socialmedia {
   list-style-type: none;
   padding: 5px;
@@ -247,10 +240,6 @@ footer {
   padding: 20px;
 }
 
-.footer-container div {
-  text-align: center;
-  margin-bottom: 10px;
-}
 
 .footer-container div:last-child {
   margin-bottom: 0;
