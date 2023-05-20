@@ -90,7 +90,6 @@ nav ul.open {
   border-radius: 3px;
   letter-spacing: 1px;
   text-align: center;
-  margin-top: 0;
 }
 
 h1 {
@@ -146,7 +145,6 @@ p {
 /* Mobile */
 .section-container {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 0.5em;
   margin: 0;
@@ -197,7 +195,7 @@ p {
   border: solid #0056b3;
 }
 
-.spotlights {
+.sportlights {
   padding: 30px;
 }
 .sectionF {

@@ -1,8 +1,25 @@
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 600px){
   .section-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: auto;
+  gap: 0.5em;
+  margin: 0;
+  padding: 20px;
+  }
+  .sectionA {
+    grid-area: 6 / 1 / 7 / 3;
+    padding: 50px;
+  }
+  .sectionB {
+    grid-area: 6 / 3 / 7 / 5;
+    padding: 50px;
+  }
+  .sectionC {
+    grid-area: 5 / 1 / 6 / 5;
+    padding: 50px;
+    display: block;
+    border: solid #0056b3;
   }
   .sectionD {
     grid-area: 1 / 1 / 2 / 5;
@@ -19,21 +36,6 @@
   .sectionG {
     grid-area: 3 / 3 / 5 / 5;
     padding: 80px;
-  }
-  .sectionC {
-    grid-area: 5 / 1 / 6 / 5;
-    padding: 50px;
-    display: block;
-    border: solid #0056b3;
-  }
-  .sectionB {
-    grid-area: 6 / 3 / 7 / 5;
-    padding: 50px;
-  }
-
-  .sectionA {
-    grid-area: 6 / 1 / 7 / 3;
-    padding: 50px;
   }
   .sectionH {
     grid-area: 5 / 1 / 7 / 5;
