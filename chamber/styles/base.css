@@ -145,6 +145,7 @@ p {
 /* Mobile */
 .section-container {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 0.5em;
   margin: 0;
