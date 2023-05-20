@@ -266,10 +266,4 @@ footer {
   flex: 1;
   text-align: center;
   margin-bottom: 10px;
-  border: solid #0056b3;
-}
-
-iframe {
-  max-width: 100%;
-  height: auto;
 }
