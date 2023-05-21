@@ -9,7 +9,7 @@ body {
   margin-bottom: 6%;
   background-color: #fefefe;
 }
-  header {
+header {
   color: #fff;
   text-align: center;
   position: fixed;
@@ -159,7 +159,6 @@ main {
   margin: 0;
   padding: 20px;
 }
-
 .sectionD {
   grid-area: 1 / 1 / 2 / 5;
   padding: 100px;
