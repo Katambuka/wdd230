@@ -1,4 +1,4 @@
-@media screen and (min-width: 960px){
+@media (min-width: 992px) {
   body {
     margin-top: 10%;
   }
@@ -94,7 +94,7 @@
     padding: 20px;
   }
   .page-content {
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px;
   }
 }

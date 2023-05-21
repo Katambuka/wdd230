@@ -1,11 +1,11 @@
-@media screen and (min-width: 600px){
+@media (min-width: 768px) {
   .section-container {
     display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 0.5em;
-  margin: 0;
-  padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5em;
+    margin: 0;
+    padding: 20px;
   }
   .sectionA {
     grid-area: 6 / 1 / 7 / 3;
@@ -46,6 +46,10 @@
     display: grid;
     gap: 0.5em;
     grid-area: 3 / 1 / 5 / 5;
+  }
+  .page-content {
+    margin: 20px;
+    padding: 20px;
   }
   .footer-container {
     display: flex;
