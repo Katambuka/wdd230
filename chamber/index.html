@@ -39,28 +39,84 @@
       <div id="date-now"></div>
     </div>
   </header> 
-  <main>
-   <div class="page-content">
-   <div class="section-container">
-      <div class="sectionA">Events</div>
-      <div class="sectionB">Weather</div>
-      <div class="sectionC">Join</div>
-      <div class="sectionD">Hero page</div>
-      <div class="sectionE">News Release</div>
-      <div class="sportlights">
-         <div class="sectionF">Sportlight1</div>
-         <div class="sectionG">Sportlight2</div>
-         <div class="sectionH">sportlight3</div>
-      </div>
+  <div class="noDisplay" id="meetAndGreet">
+    <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+  </div>
+  <main class="home-grid">
+    <section id="hero-banner">
+      <h2>Welcome to Dubai</h2>
+      <a href="join.html">Join the Chamber</a>
+      <picture>
+        <img src="images/fotor_2023-3-6_13_10_2.png" alt="Deira Cityscape">
+      </picture>
+    </section>
+
+    <section class="event">
+      <h2>Free Violent community fair</h2>
+      <h3>Dubai creed Hotel Deira</h3>
+      <p>Come attend the event, learn of your rights, how to fix visa issual problems
+        <a href="join.html" aria-label="Learn more about joining the Dubai Chamber of Commerce"> Learn more</a>....
+      </p>
+  </section>
+  <section class="weather">
+    <h2>Current Weather in Dubai</h2>
+    <div>
+        <picture>
+            <img id="weatherIcon" src="#" alt="Weather Icon">
+        </picture>
+        <p><span id="temperature">Temp Placeholder</span>°C</p>
     </div>
-   </div>
-  </main>
+        <h3><span id="condition">Weather Condition</span></h3>
+    <hr>
+    <p>Wind speed: <span id="windSpeed"></span> km/h</p>
+    <p>Wind chill: <span id="windChill"></span> &deg;C</p>
+  </section>
+  <section class="news">
+    <h2>News Release</h2>
+    <p>
+      <a href="https://wam.ae/en/details/1395303133616">Dubai Chamber of Commerce introduces Business Sectors Platform to Boost Efficiency and Impact</a>
+    </p>
+  </section>
+  <div class="spotlight">
+    <section class="spotlight1">
+      <h3>Property Investment</h3>
+            <p>"Make your money work for you!"</p>
+            <p>Visit Virtual Zone for all your business needs</p>
+            <hr>
+            <p>
+              <a href="https://virtualzone.ae">Dubai Virtual Zone</a>
+            </p>
+            <p>tel +971-1000-1000</p>
+    </section>
+    <section class="spotlight2">
+        <h3>Innovate the Future</h3>         
+            <h4>"Reach for the stars, with the technology of the future."</h4>
+            <p>the future of Dubai is likely to be characterized by continued growth and development in a variety of areas, including technology, sustainability, tourism, and entrepreneurship.</p>
+            <hr>
+            <p>greetings@innovatethefuture.ae</p>
+            <p>+971-9000-9000 | www.gov.ae</p>
+    </section>
+    <section id="spotlight3" class="large-only">
+        <h3>Innovate the Future</h3>         
+            <h4>"Reach for the stars, with the technology of the future."</h4>
+            <p>the future of Dubai is likely to be characterized by continued growth and development in a variety of areas, including technology, sustainability, tourism, and entrepreneurship.</p>
+            <hr>
+            <p>greetings@innovatethefuture.ae</p>
+            <p>+971-9000-9000 | www.gov.ae</p>
+    </section>
+  </div>
+  <div class="medium-display" id="join">
+    <a href="join.html">Join Us!</a>
+    <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+</div>
+  </main>    
     <footer>
       <div class="footer-container">
         <div>
           <img src="images/fotor.png" alt="logo">
         </div>
         <div class="contact-info">
+          <p>Dubai </p>
           <p>123 sheik zayeed Street, Dubai, Dubaya</p>
           <p>Phone: +971-456-7890</p>
         </div>
@@ -70,7 +126,7 @@
         </div>
       </div>
       <hr>
-      &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI
+      <div class="rights"> &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI </div>
     </footer>    
     <script src="scripts/main.js"></script>
 </body>

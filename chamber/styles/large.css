@@ -1,7 +1,5 @@
-@media (min-width: 992px) {
-  body {
-    margin-top: 10%;
-  }
+
+@media only screen and (min-width: 64rem) {
   nav button {
     display: none;
   }
@@ -34,67 +32,79 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+    margin-top: 0;
+    padding: 20px;
   }
-  .section-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    margin: 0;
+  main section,
+  main div {
+      height: 100%;
+      width: 100%;
   }
 
-  .sectionA {
-    grid-area: 1 / 1 / 3 / 2;
-    padding: 110px;
-    margin-top: 37px;
-  }
-  .sectionB {
-    grid-area: 3 / 1 / 5 / 2;
-    padding: 110px;
+  /* Home Styles */
+  .home-grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+      grid-template-rows: auto auto auto;
+      gap: 15px;
   }
 
-  .sectionC {
-    grid-area: 5 / 1 / 7 / 2;
-    padding: 110px;
+  #hero-banner {
+      grid-column: 2/3;
+      grid-row: 1/3;
   }
-  .sectionD {
-    grid-area: 1 / 2 / 5 / 4;
-    padding: 230px;
-    margin-top: 37px;
+  #hero-banner {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+#hero-banner a {
+    bottom: 15%;
+    right: 10%;
+}
+
+#hero-banner picture img {
+    height: 100%;
+    width: 100%;
+}
+ 
+.event {
+      grid-row: 1/2;
+      margin-right: 0;
   }
-  .sectionE {
-    grid-area: 5 / 2 / 7 / 4;
-    padding: 120px;
+
+  .weather {
+      grid-column: 1/2;
+      grid-row: 2/3;
   }
-  .sportlights {
-    border: solid #0056b3;
-    grid-area: 1 / 4 / 7 / 4;
-    padding: 20px;
-    margin-top: 37px;
+
+  #join {
+      grid-column: 1/2;
+      grid-row: 3/4;
   }
-  .sectionF {
-    grid-area: 1 / 1 / 3 / 5;
-    padding: 110px;
+
+  .news {
+      grid-column: 2/3;
+      grid-row: 3/4;
   }
-  .sectionG {
-    grid-area: 3 / 1 / 5 / 5;
-    padding: 110px;
-  }
-  .sectionH {
-    grid-area: 5 / 1 / 7 / 5;
-    display: block;
-    padding: 110px;
-    border: solid #0056b3;
-  }
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
-    padding: 20px;
-  }
-  .page-content {
-    margin: 20px;
-    padding: 20px;
-  }
+
+  .spotlight {
+      display: flex;
+      flex-direction: column;
+      grid-column: 3/4;
+      grid-row: 1/4;
+      box-sizing: border-box;
+    }
+    .spotlight section {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .large-only {
+        display: block;
+    }
+    .footer-container {
+      display: flex;
+    }
 }
