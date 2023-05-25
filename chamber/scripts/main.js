@@ -17,7 +17,7 @@ function toggleMenu() {
   document.getElementById('year').textContent = currentYear;
   
   const currentDate = new Date().getDate;
-  if (currentDate === 1 || currentDate ===3 ) {
+  if (currentDate === 1 || currentDate ===2 ) {
     //display meet and greet//
     document.getElementById('meetAndGreet').classList.remove('noDisplay');
   }
