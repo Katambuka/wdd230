@@ -141,7 +141,7 @@ nav ul.open {
   color: #fff;
   text-decoration: none;
   position: absolute;
-  box-shadow: 3px 3px 3px #27ef15;
+  text-shadow: .25rem .25rem .75rem #007bff;
   padding: 3%;
   border-radius: 10px;
   bottom: 15%;
