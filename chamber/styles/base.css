@@ -219,8 +219,8 @@ main section, main div {
 
 #condition {
   display: block;
-  color: #69140E;
-  margin-top: -25px;
+  color: #000;
+  margin-top: 25px;
 }
 
 .weather {
@@ -285,7 +285,7 @@ main section, main div {
 .medium-display p button {
   margin-top: 10px;
   font-size: 14px;
-  text-align: center;
+  text-align: center;;
 }
 
 
