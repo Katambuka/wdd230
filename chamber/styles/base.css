@@ -206,6 +206,9 @@ main {
   margin-top: 5%;
   margin-bottom: 2px;
 }
+.fab fa-instagram {
+  font-size: 25px;
+}
 
 main section, main div {
   background-color: #fff;
@@ -298,7 +301,6 @@ footer {
   text-align: center;
   margin-bottom: 10px;
 }
-
 .noDisplay {
   display: none;
 }
