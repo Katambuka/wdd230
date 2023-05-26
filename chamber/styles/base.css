@@ -227,7 +227,11 @@ main section, main div {
   box-sizing: border-box;
   padding: 2%;
 }
-
+#windSpeed, #windChill {
+  color: #0056b3;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
 .weather div {
   height: 30%;
   width: 80%;
@@ -349,4 +353,9 @@ footer {
   width: 100%;
   height: 200px;
   margin: 10px auto;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
