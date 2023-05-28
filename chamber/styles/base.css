@@ -282,7 +282,7 @@ main section, main div {
 }
 
 .medium-display button:hover {
-  background-color: #45a049;
+  background-color: #000;
 }
 
 /* Styling for the paragraph */
@@ -291,7 +291,9 @@ main section, main div {
   font-size: 14px;
   text-align: center;;
 }
-
+img {
+  border-radius: 3px;
+}
 
 footer  {
   color: #000;
