@@ -1,0 +1,32 @@
+img {
+   width: 220px;
+   height: 200px;
+   filter: blur(0em);
+   transition: filter 0.5s;
+   transition-delay: 1s;transition-property: margin-right, color;
+}
+img[data-src] {
+filter: blur(0.2em);
+}
+figure {
+ border: thin #c0c0c0 solid;
+ display: flex;
+ flex-flow: column;
+ padding: 5px;
+ max-width: 220px;
+ margin: auto;
+}
+
+figcaption {
+ background-color: #222;
+ color: #fff;
+ font: italic smaller sans-serif;
+ padding: 3px;
+ text-align: center;
+}
+h1,h2 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+font-size: 24px;
+text-shadow: .25rem .25rem .75rem #2a2228;
+}
