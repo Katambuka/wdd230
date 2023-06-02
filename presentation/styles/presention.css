@@ -30,3 +30,19 @@ text-align: center;
 font-size: 24px;
 text-shadow: .25rem .25rem .75rem #2a2228;
 }
+.footer {
+   background-color: #0056b3;
+   padding: 20px;
+   text-align: center;
+   border-radius: 3%;
+   color: #fff;
+   box-shadow: 0 0 10px 5px rgb(15, 10, 10);
+ }
+ 
+ .footer-modified {
+   font-weight: bold;
+   color: rgb(240, 240, 94);
+ }
+ #year {
+   color: yellow;
+ }
