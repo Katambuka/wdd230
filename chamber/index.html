@@ -50,7 +50,10 @@
       <h2>Welcome to Dubai</h2>
       <a href="#">Join the Chamber</a>
       <picture>
-        <img srcset="images/fotor200.jpg 200w, images/fotor600.jpg 690w, images/fotor1000.jpg 900w" sizes="(max-width: 600px) 400px, (max-width: 900px) 600px, 900px" src="images/fotor1000.jpg" alt="hero-image">
+        <source media="(max-width: 390px)" srcset="images/fotor200vw.jpg">
+        <source media="(max-width: 690px)" srcset="images/fotor600vw.jpg">
+        <source media="(max-width: 1002px)" srcset="images/fotor_1000vw.jpg">
+        <img src="images/fotor_1000vw.jpg" alt="hero-image">
       </picture>
     </section>
     <section class="event">
