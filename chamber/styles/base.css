@@ -283,7 +283,7 @@ main section, main div {
 .medium-display button {
   background-color: #fff;
   color: white;
-  border: none;
+  border: 1 solid #007bff;
   padding: 10px 20px;
   font-size: 16px;
   text-decoration: none;
