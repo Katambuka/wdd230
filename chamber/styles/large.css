@@ -39,7 +39,6 @@
       height: 100%;
       width: 100%;
   }
-
   /* Home Styles */
   .home-grid {
       grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);

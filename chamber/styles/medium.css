@@ -70,11 +70,6 @@
     padding: 20px;
   }
   
-  .socialmedia li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
   .socialmedia li a {
     font-size: 30px;
     color: #007bff;;
@@ -88,7 +83,7 @@
   .socialmedia {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin: 0;
   }
   
   main {

@@ -21,10 +21,13 @@ function toggleMenu() {
     //display meet and greet//
     document.getElementById('meetAndGreet').classList.remove('noDisplay');
   }
-
+  
+ /*local storage page count*/
   if (localStorage.pagecount) {
     localStorage.pagecount = Number(localStorage.pagecount) + 1;
   } else {
     localStorage.pagecount = 1;
   }
-  document.write("You have visited this page " + localStorage.pagecount + " times.");
+  const totalVisits = localStorage.pagecount; 
+  document.getElementById('visits').textContent = "They are " + totalVisits + " visits on this page.";
+  
