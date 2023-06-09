@@ -23,15 +23,15 @@ function toggleMenu() {
   }
   
  /*local storage page count*/
-  if (localStorage.pagecount) {
-    localStorage.pagecount = Number(localStorage.pagecount) + 1;
+  if (localStorage.pagevisit) {
+    localStorage.pagevisit = Number(localStorage.pagevisit) + 1;
   } else {
-    localStorage.pagecount = 1;
+    localStorage.pagevisit = 1;
   }
-  const totalVisits = localStorage.pagecount; 
+  const totalVisits = localStorage.pagevisit; 
   document.getElementById('visits').textContent = "They are " + totalVisits + " visits on this page.";
   
-  // Function to load images immediately
+  /* Function to load images immediately
   const loadImagesImmediately = (images) => {
     images.forEach((image) => {
       loadImages(image);
@@ -73,4 +73,46 @@ function toggleMenu() {
   const imagesToLoad = document.querySelectorAll("img[data-src]");
   
   // Call the lazyLoadImages function to start lazy loading
-  lazyLoadImages(imagesToLoad);
+  lazyLoadImages(imagesToLoad);*/
+
+  window.onload = function() {
+    const loadImagesImmediately = (images) => {
+      images.forEach((image) => {
+        loadImages(image);
+      });
+    };
+  
+    const lazyLoadImages = (images) => {
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              const image = entry.target;
+              setTimeout(() => {
+                loadImages(image);
+                observer.unobserve(image);
+              }, index * 25000);
+            }
+          });
+        });
+  
+        images.forEach((image) => {
+          observer.observe(image);
+        });
+      } else {
+        loadImagesImmediately(images);
+      }
+    };
+  
+    const loadImages = (image) => {
+      image.setAttribute("src", image.getAttribute("data-src"));
+      image.onload = () => {
+        image.removeAttribute("data-src");
+      };
+    };
+  
+    const imagesToLoad = document.querySelectorAll("img[data-src]");
+  
+    lazyLoadImages(imagesToLoad);
+  };
+  

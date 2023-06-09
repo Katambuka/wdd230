@@ -18,7 +18,7 @@ header {
   border-bottom: 0.0225rem solid #0056b3;
  }
 #visits {
-  display: none;
+  color: red;
 }
 .container {
 display: flex;
@@ -403,6 +403,8 @@ div.map a {
  }
  .description {
   color: #000;
+  margin-top: 20px;
+  text-align: center;
  }
  .demo-data {
   color: #000;
@@ -410,8 +412,7 @@ div.map a {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
  }
  .container {
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0 20px;
 }
 picture img {
