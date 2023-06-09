@@ -12,71 +12,76 @@
    color: #000;
    margin: 0 auto;
    margin-top: 5%;
-   max-width: 100%;
    margin-bottom: 2%;
 }
-:root {
-	--back: hsla(150, 50%, 30%, 1);
-  --back2: hsla(150, 50%, 30%, .5);
-  --foredark: hsla(0,0%,10%,1);
-	--forelight: hsla(0,0%,100%,1);
-	--border: hsl(0,0%,20%);
-	--borderlight: hsl(0,0%,33%);
-	--shadow: hsl(0,0%,50%);
-	--zebra: hsl(0, 0%, 93%, 1);
-}
 
-table {
-	margin: 10px auto;
-	border: thin solid var(--border);
-	box-shadow: 0 0 7px var(--shadow);
-	border-collapse: collapse;
-}
-caption {
+:root {
+   --back: hsla(150, 50%, 30%, 1);
+   --back2: hsla(150, 50%, 30%, .5);
+   --foredark: hsla(0,0%,10%,1);
+   --forelight: hsla(0,0%,100%,1);
+   --border: hsl(0,0%,20%);
+   --borderlight: hsl(0,0%,33%);
+   --shadow: hsl(0,0%,50%);
+   --zebra: hsl(0, 0%, 93%, 1);
+ }
+ 
+ table {
+   border-collapse: collapse;
+   letter-spacing: 1px;
+   font-size: 1.8rem;
+   margin: 20px auto;
+ }
+ 
+ caption {
    padding: 10px;
    caption-side: bottom;
-    color: var(--back);
-    font-size: 1rem;
+   color: var(--back);
+   font-size: 1.5rem;
  }
  
  tr:first-child th .highlight {
-    background-color: var(--back);
-    color: var(--forelight);
+   background-color: var(--back);
+   color: var(--forelight);
  }
  
- th, td {
-    padding: 7px 15px;
-    border: 1px solid var(--borderlight);
+ tr,
+ td {
+   padding: 7px 15px;
  }
  
  th {
-    background-color: var(--back2);
-    font-size: larger;
+   background-color: var(--back2);
+   font-size: larger;
+   color: black;
+   border: 1px solid var(--borderlight);
  }
  
  td {
-    text-align: center;
-    
+   text-align: center;
+   border: 1px solid var(--borderlight);
  }
  
  tbody tr:nth-child(even) {
-    background-color: var(--zebra);
+   background-color: var(--zebra);
  }
  
  tbody tr:nth-child(odd) td {
    background-color: #efe7de;
  }
  .tb-title {
-   background-color: #000;
-   font-size: 1.1em;
-   font-weight: bold;
-   color: #fff;
-   text-align: center;
-}
+    background-color: var(--back);
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    text-align: center;
+  }
  .footer {
    padding: 20px;
    text-align: center;
    border-radius: 3%;
    color: #000;
+   font-weight: bold;
  }
  
