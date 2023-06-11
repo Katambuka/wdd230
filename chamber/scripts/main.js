@@ -31,88 +31,41 @@ function toggleMenu() {
   const totalVisits = localStorage.pagevisit; 
   document.getElementById('visits').textContent = "They are " + totalVisits + " visits on this page.";
   
-  /* Function to load images immediately
-  const loadImagesImmediately = (images) => {
+  /* Images lazyloading*/
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("[data-src]");
+  
     images.forEach((image) => {
-      loadImages(image);
+      const placeholderSrc = "images/placeholder.png";
+      image.setAttribute("src", placeholderSrc);
     });
-  };
   
-  // Function to lazy load images using Intersection Observer
-  const lazyLoadImages = (images) => {
-    if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            const image = entry.target;
-            setTimeout(() => {
-              loadImages(image);
-              observer.unobserve(image);
-            }, index * 25000);
-          }
-        });
-      });
+    const imgOptions = {
+      threshold: 0,
+      rootMargin: "0px 0px -50px 0px",
+    };
   
-      images.forEach((image) => {
-        observer.observe(image);
+    const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          preloadImage(entry.target);
+          imgObserver.unobserve(entry.target);
+        }
       });
-    } else {
-      loadImagesImmediately(images);
+    }, imgOptions);
+  
+    images.forEach((image) => {
+      imgObserver.observe(image);
+    });
+  });
+  
+  function preloadImage(img) {
+    const src = img.getAttribute("data-src");
+    if (!src) {
+      return;
     }
-  };
-  
-  // Function to load individual images
-  const loadImages = (image) => {
-    image.setAttribute("src", image.getAttribute("data-src"));
-    image.onload = () => {
-      image.removeAttribute("data-src");
-    };
-  };
-  
-  // Select all images with data-src attribute
-  const imagesToLoad = document.querySelectorAll("img[data-src]");
-  
-  // Call the lazyLoadImages function to start lazy loading
-  lazyLoadImages(imagesToLoad);*/
-
-  window.onload = function() {
-    const loadImagesImmediately = (images) => {
-      images.forEach((image) => {
-        loadImages(image);
-      });
-    };
-  
-    const lazyLoadImages = (images) => {
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-              const image = entry.target;
-              setTimeout(() => {
-                loadImages(image);
-                observer.unobserve(image);
-              }, index * 25000);
-            }
-          });
-        });
-  
-        images.forEach((image) => {
-          observer.observe(image);
-        });
-      } else {
-        loadImagesImmediately(images);
-      }
-    };
-  
-    const loadImages = (image) => {
-      image.setAttribute("src", image.getAttribute("data-src"));
-      image.onload = () => {
-        image.removeAttribute("data-src");
-      };
-    };
-  
-    const imagesToLoad = document.querySelectorAll("img[data-src]");
-  
-    lazyLoadImages(imagesToLoad);
-  };
+    img.src = src;
+  }
   

@@ -8,46 +8,39 @@ document.getElementById('lastmodified').textContent = new Date().toLocaleDateStr
 const currentYear = new Date().getFullYear();
 document.getElementById('year').textContent = currentYear;
 
-   // Function to load images immediately
-   const loadImagesImmediately = (images) => {
-      images.forEach((image) => {
-        loadImages(image);
-      });
-    };
-    
-    // Function to lazy load images using Intersection Observer
-    const lazyLoadImages = (images) => {
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-              const image = entry.target;
-              setTimeout(() => {
-                loadImages(image);
-                observer.unobserve(image);
-              }, index * 25000);
-            }
-          });
-        });
-    
-        images.forEach((image) => {
-          observer.observe(image);
-        });
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("[data-src]");
+
+  images.forEach((image) => {
+    const placeholderSrc = "images/placeholder.png";
+    image.setAttribute("src", placeholderSrc);
+  });
+
+  const imgOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -50px 0px",
+  };
+
+  const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
       } else {
-        loadImagesImmediately(images);
+        preloadImage(entry.target);
+        imgObserver.unobserve(entry.target);
       }
-    };
-    
-    // Function to load individual images
-    const loadImages = (image) => {
-      image.setAttribute("src", image.getAttribute("data-src"));
-      image.onload = () => {
-        image.removeAttribute("data-src");
-      };
-    };
-    
-    // Select all images with data-src attribute
-    const imagesToLoad = document.querySelectorAll("img[data-src]");
-    
-    // Call the lazyLoadImages function to start lazy loading
-    lazyLoadImages(imagesToLoad);
+    });
+  }, imgOptions);
+
+  images.forEach((image) => {
+    imgObserver.observe(image);
+  });
+});
+
+function preloadImage(img) {
+  const src = img.getAttribute("data-src");
+  if (!src) {
+    return;
+  }
+  img.src = src;
+}

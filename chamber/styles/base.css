@@ -18,7 +18,7 @@ header {
   border-bottom: 0.0225rem solid #0056b3;
  }
 #visits {
-  color: red;
+  color: green;
 }
 .container {
 display: flex;
