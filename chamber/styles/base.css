@@ -418,3 +418,61 @@ div.map a {
 picture img {
   object-fit: cover;
 }
+
+/***********join**************/
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Form inputs and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Form textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Form submit button */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+address {
+  margin-top: 30px;
+  text-align: center;
+}
+
+address a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
