@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="styles/base.css">
    <link rel="stylesheet" href="styles/medium.css" >
    <link rel="stylesheet" href="styles/large.css" >
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
    <title>Dubai Chamber of commerce</title>
  </head>
@@ -26,15 +26,15 @@
           <ul id="primaryNav" class="menu-left">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="#join.html">Join</a></li>
+            <li><a href="join.html">Join</a></li>
             <li><a href="#directory.html">Directory</a></li>
             <li><a href="#contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="socialmedia">
           <ul>
-            <li><a href="https://instagram.com/nathank2?igshid=ZmZhODViOGI=" class="fab fa-instagram" aria-label="Instagram"></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100063537615114" class="fab fa-facebook-square" aria-label="Facebook"></a></li>
+            <li><a href="https://instagram.com/nathank2?igshid=ZmZhODViOGI=" class="fa fa-instagram" aria-label="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100063537615114" class="fa fa-facebook" aria-label="Facebook"></a></li>
           </ul>
         </div>
       </div>
@@ -44,19 +44,32 @@
     </div>
   </header> 
   <main>
-   <form method="get" action="thankyou.html">
-      <fieldset>
-        <legend class="top">Send us a text and we are happy to serve you</legend>
-        <label class="top">First Name*<input type="text" name="fname" required></label>
-        <label class="top">Last Name*<input type="text" name="lname" required></label>
-        <label class="top">Phone<input type="tel" name="phone" placeholder="1234567"></label>
-        <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-        <label class="top">Confirm you have double checked your details*<input type="checkbox" name="process" value="yes" required></label>
-        <label class="top" for="msg">Message*</label><textarea id="msg" placeholder="Type here" name="user_message"></textarea>
-      </fieldset>
-      <input type="submit" value="SEND" class="submitBtn">
-    </form>
-  </main>
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend class="top">
+              <h2>Send us a text and we are happy to serve you</h2>
+            </legend>
+            <label class="top">First Name *️⃣<input type="text" name="fname" required></label>
+            <label class="top">Last Name *️⃣<input type="text" name="lname" required></label>
+            <label class="top">Phone *️⃣<input type="tel" name="phone" placeholder="1234567" required></label>
+            <label class="top">Email *️⃣<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Membership Level
+              <select name="membership">
+                <option value="np_membership">NP Membership</option>
+                <option value="bronze_membership">Bronze Membership</option>
+                <option value="silver_membership">Silver Membership</option>
+                <option value="gold_membership">Gold Membership</option>
+              </select>
+            </label>
+            <label class="top">Business Description<textarea name="business_description"></textarea></label>
+            <input type="hidden" name="form_load_time" value="">
+            <label class="top">
+              Confirm you have double checked your details *️⃣<input type="checkbox" name="process" value="yes" required>
+            </label>
+          </fieldset>
+          <input type="submit" value="SEND" class="submitBtn">
+        </form>
+      </main>
   <footer>
    <div class="footer-container">
      <div>

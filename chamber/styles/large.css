@@ -105,4 +105,23 @@
     .footer-container {
       display: flex;
     }
+    form fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1rem 2%;
+      max-width: 700px;
+    }
+  
+    form label.top,
+    form div {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+    }
+  
+    form input.submitBtn {
+      flex-basis: 100%;
+      margin: 0 auto;
+    }
 }

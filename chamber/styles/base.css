@@ -185,7 +185,6 @@ p {
   margin-bottom: 10px;
   padding: 20px;
 }
-
 .socialmedia li {
   display: inline-block;
   margin-right: 10px;
@@ -209,6 +208,19 @@ p {
   list-style-type: none;
   padding: 0;
   margin-bottom: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
 
 main {
@@ -281,7 +293,6 @@ main section, main div {
 .medium-display button {
   color: white;
   width: 100%;
-  border: 1 solid #007bff;
   padding: 10px 20px;
   font-size: 16px;
   text-decoration: none;
@@ -293,7 +304,7 @@ main section, main div {
   text-decoration: none;
 }
 .medium-display button:hover {
-  background-color: tomato;
+  color: tomato;
 }
 
 /* Styling for the paragraph */
@@ -421,15 +432,59 @@ picture img {
 
 /***********join**************/
 
-/* Form labels */
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+form fieldset {
+  margin: 2rem auto;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  max-width: 500px;
 }
 
-/* Form inputs and textarea */
+form legend {
+  color: #000;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+form label.top,
+form div {
+  margin-bottom: 10px;
+}
+
+form label.top,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: navy;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form input.submitBtn {
+  border: none;
+  color: #fff;
+  background-color: #0056b3;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  width: 96%;
+  margin: 0;
+  cursor: pointer;
+}
+
+form label.top input:required:invalid {
+  border-bottom: red solid 3px;
+  border-radius: 5px;
+}
+
+form label.top input:required:valid {
+  border-top: green solid 3px;
+}
+
 input[type="text"],
+input[type="tel"],
 input[type="email"],
 textarea {
   width: 100%;
@@ -437,42 +492,13 @@ textarea {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
-/* Form textarea */
-textarea {
-  resize: vertical;
-  min-height: 100px;
+input:focus,
+textarea:focus {
+  outline: none;
 }
-
-/* Form submit button */
-button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-address {
-  margin-top: 30px;
-  text-align: center;
-}
-
-address a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-address a:hover {
-  text-decoration: underline;
+.submitBtn:hover {
+  background-color: tomato;
 }

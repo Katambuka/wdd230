@@ -62,7 +62,7 @@
     font-size: 18px;
     margin-bottom: 10px;
     text-align: center;
-    text-shadow: .25rem .25rem .75rem #007bff;
+    text-shadow: .25rem .25rem .75rem #000;
   }
   
   p {
@@ -106,5 +106,5 @@
     object-fit: cover;
     border-radius: 1%;
   }
-  
+
 }
