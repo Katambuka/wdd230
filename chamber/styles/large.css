@@ -43,7 +43,7 @@
   .home-grid {
       grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
       grid-template-rows: auto auto auto;
-      gap: 15px;
+      gap: 10px;
   }
 
   #hero-banner {

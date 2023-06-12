@@ -161,7 +161,7 @@ nav ul.open {
 
 #hero-banner img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -236,7 +236,8 @@ main section, main div {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 1px;
+  margin: 5px;
 }
 
 #condition {
