@@ -124,4 +124,10 @@
       flex-basis: 100%;
       margin: 0 auto;
     }
+    /*Dirctory Styles*/
+.directory-list .businessCards section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+   <meta charset="UTF-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="The Dubai Chamber of Commerce & Industry is a non-profit organization that supports businesses in Dubai.
+   They provide networking opportunities, business resources, and advocacy for companies looking to grow in the region.">
+   <meta name="author" content="Nathank">
+   <meta name="keywords" content="web front end">
+   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="stylesheet" href="styles/medium.css" >
+   <link rel="stylesheet" href="styles/large.css" >
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
+   <title>Dubai Chamber of commerce</title>
+ </head>
+<body class="cleaefix">
+   <header>
+      <div class="head">
+        <div class="container">
+          <nav id="navigation">
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <picture><img src="images/logo.jpg" alt="logo" height="300" width="400"></picture>
+            <ul id="primaryNav" class="menu-left">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="#directory.html">Directory</a></li>
+              <li><a href="#contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="socialmedia">
+            <ul>
+              <li><a href="https://instagram.com/nathank2?igshid=ZmZhODViOGI=" class="fab fa-instagram" aria-label="Instagram"></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100063537615114" class="fab fa-facebook-square" aria-label="Facebook"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="current-date">
+        <div id="date-now"></div>
+      </div>
+    </header> 
+    <main id="directory-main" class="directory-grid">
+      <div class="menu">
+         <button id="grid">⏹️Grid</button>
+         <button id="list">📄List</button>
+      </div>
+      <hr>
+      <article class="grid">
+      <div class="businessCards">
+         <section></section>
+         <section></section>
+         <section></section>
+         <section></section>
+         <section></section>
+         <section></section>
+         <section></section>
+         <section></section>
+         <section></section>
+         <section></section>
+      </div>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div>
+         <picture><img src="images/logo.jpg" alt="logo" height="300" width="400"></picture>
+        </div>
+        <div class="contact-info">
+          <p>Dubai </p>
+          <p>123 sheik zayeed Street, Dubai, Dubaya</p>
+          <p>Phone: +971-456-7890</p>
+        </div>
+        <div class="map">
+          <a href="https://www.google.com/maps/place/25.271816338824727,55.30609081537187" target="_blank">Location <span>&#128205;</span>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div><p id="visits"></p></div>
+      <div class="rights"> &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI </div>
+    </footer>    
+    <script src="scripts/main.js"></script>
+</body>
+</html>

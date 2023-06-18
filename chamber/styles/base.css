@@ -503,3 +503,96 @@ textarea:focus {
 .submitBtn:hover {
   background-color: tomato;
 }
+
+/*Directory Styles*/
+.businessCards img {
+  width: 100%;
+  height: auto;
+}
+
+#directory-main div {
+  border: none;
+  background-color: white;
+  margin: 0;
+}
+
+#layoutBtn {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.businessCards p {
+  margin: 0;
+  padding: 8px;
+}
+
+/*Directory Grid*/
+.directory-grid .businessCards section {
+  padding: 5%;
+  box-shadow: 8px 8px 7px #1c2f3c;
+}
+
+.directory-grid .businessName {
+  display: none;
+}
+
+/*Directory List*/
+.directory-list .businessCards img {
+  display: none;
+}
+
+.directory-list .businessCards section {
+  padding: 5%;
+  margin: 0 auto ;
+  text-align: start;
+}
+
+.directory-list .businessCards p {
+  padding: 4px;
+}
+
+.businessCards.list {
+  display: block;
+}
+
+.businessCards section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+.list img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+.grid p {
+  text-align: start;
+  font-family: sans-serif
+}
+section img {
+	height: 75px;
+	max-width: 100%}

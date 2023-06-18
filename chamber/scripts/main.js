@@ -69,3 +69,76 @@ function toggleMenu() {
     img.src = src;
   }
   
+  /**************Directory*********************
+// Fetch the data from the JSON file
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const companies = data.companies;
+    const businessCards = document.querySelector('.businessCards');
+
+    // Loop through the company data and populate the sections
+    companies.forEach((company, index) => {
+      const section = businessCards.children[index];
+      section.innerHTML = `
+        <h2>${company.name}</h2>
+        <p>Address: ${company.address}</p>
+        <p>Phone: ${company.phone}</p>
+        <p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
+        <img src="${company.image}" alt="${company.name}" />
+        <p>Membership Level: ${company.membershipLevel}</p>
+        <p>${company.otherInfo}</p>
+      `;
+    });
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+*/
+// Fetch the data from the JSON file
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const companies = data.companies;
+    const businessCards = document.querySelector('.businessCards');
+    const gridButton = document.querySelector("#grid");
+    const listButton = document.querySelector("#list");
+    const display = document.querySelector("article");
+
+    // Function to display companies in grid view
+    const displayGrid = () => {
+      display.classList.add("grid");
+      display.classList.remove("list");
+    };
+
+    // Function to display companies in list view
+    const displayList = () => {
+      display.classList.add("list");
+      display.classList.remove("grid");
+    };
+
+    // Event listener for the grid button
+    gridButton.addEventListener("click", displayGrid);
+
+    // Event listener for the list button
+    listButton.addEventListener("click", displayList);
+
+    // Loop through the company data and populate the sections
+    companies.forEach((company, index) => {
+      const section = businessCards.children[index];
+      if (section) {
+        section.innerHTML = `
+          <h2>${company.name}</h2>
+          <p>Address: ${company.address}</p>
+          <p>Phone: ${company.phone}</p>
+          <p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
+          <img src="${company.image}" alt="${company.name}" />
+          <p>Membership Level: ${company.membershipLevel}</p>
+          <p>${company.otherInfo}</p>
+        `;
+      }
+    });
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });

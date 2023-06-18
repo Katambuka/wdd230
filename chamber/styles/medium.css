@@ -108,3 +108,20 @@
   }
 
 }
+
+/*Directory Styles*/
+.businessCards section {
+  box-sizing: border-box;
+  grid-column: auto;
+}
+
+.businessCards a {
+  overflow-wrap: break-word;
+}
+
+/*Directory Grid*/
+.directory-grid .businessCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+}

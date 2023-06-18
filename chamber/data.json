@@ -1,0 +1,95 @@
+{
+   "companies": [
+     {
+       "name": "Emirates Airlines",
+       "address": "Dubai, UAE",
+       "phone": "+971 123456789",
+       "website": "https://www.emirates.com/",
+       "image": "https://th.bing.com/th/id/R.fe9f1cd5fe498c2a6308e48a41e65f39?rik=g9fI8D5%2fP8VhXg&pid=ImgRaw&r=0",
+       "membershipLevel": "Gold",
+       "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+     },
+     {
+       "name": "Dubai Mall",
+       "address": "Dubai, UAE",
+       "phone": "+971 234567890",
+       "website": "https://thedubaimall.com/",
+       "image": "https://miro.medium.com/max/6000/1*iJyYvnbQ56C1VEx1BP9PYA.jpeg",
+       "membershipLevel": "Silver",
+       "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     },
+     {
+       "name": "Jumeirah Group",
+       "address": "Dubai, UAE",
+       "phone": "+971 345678901",
+       "website": "https://www.jumeirah.com/",
+       "image": "https://www.hospitalitynet.org/picture/153050837.jpg",
+       "membershipLevel": "Bronze",
+       "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+     },
+     {
+       "name": "Emaar Properties",
+       "address": "Dubai, UAE",
+       "phone": "+971 456789012",
+       "website": "https://www.emaar.com/",
+       "image": "https://www.arabianbusiness.com/public/images/2018/02/25/17_Emaar.jpg",
+       "membershipLevel": "Gold",
+       "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+     },
+     {
+       "name": "Emirates NBD",
+       "address": "Dubai, UAE",
+       "phone": "+971 567890123",
+       "website": "https://www.emiratesnbd.com/",
+       "image": "https://th.bing.com/th/id/R.acfdde445c9a7bf604a151fff4db729a?rik=n%2fYwypnusmAL5g&riu=http%3a%2f%2fwww.dubaiexpatblog.com%2fwp-content%2fuploads%2f2010%2f12%2fEmirates-NBD.jpg&ehk=QyFjIo%2bjD5Q8hl7o%2bG3rwuQ4G8lO1s%2bBhLjkGbIU%2bKA%3d&risl=&pid=ImgRaw&r=0",
+       "membershipLevel": "Silver",
+       "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+     },
+     {
+       "name": "Nakheel",
+       "address": "Dubai, UAE",
+       "phone": "+971 678901234",
+       "website": "https://www.nakheel.com/",
+       "image": "https://th.bing.com/th/id/OIP.Y87ypuLiPT-UjQDPBlTN6QHaEc?pid=ImgDet&rs=1",
+       "membershipLevel": "Bronze",
+       "otherInfo": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     },
+     {
+       "name": "DP World",
+       "address": "Dubai, UAE",
+       "phone": "+971 789012345",
+       "website": "https://www.dpworld.com/",
+       "image": "https://th.bing.com/th?id=OIF.33%2fGNkHBGMdqkboJ0z66xg&pid=ImgDet&rs=1",
+       "membershipLevel": "Gold",
+       "otherInfo": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+     },
+     {
+       "name": "Etisalat",
+       "address": "Dubai, UAE",
+       "phone": "+971 890123456",
+       "website": "https://www.etisalat.ae/",
+       "image": "https://www.gccbusinessnews.com/filestorage/2020/11/GBN_Etisalat_23112020.jpg",
+       "membershipLevel": "Silver",
+       "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     },
+     {
+       "name": "Dubai Duty Free",
+       "address": "Dubai, UAE",
+       "phone": "+971 901234567",
+       "website": "https://www.dubaidutyfree.com/",
+       "image": "https://www.guide2dubai.com/portals/0/Images/Living/Shopping/dubai-duty-free.jpg",
+       "membershipLevel": "Bronze",
+       "otherInfo": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+     },
+     {
+       "name": "Majid Al Futtaim",
+       "address": "Dubai, UAE",
+       "phone": "+971 123456789",
+       "website": "https://www.majidalfuttaim.com/",
+       "image": "https://th.bing.com/th/id/R.d98913b31fe5071095dd5ff2a3880493?rik=LSacTzHtUAB54w&riu=http%3a%2f%2fmedia.fashionnetwork.com%2fm%2f6533%2fcfb5%2f0184%2f4797%2fd4f5%2f4bf0%2f9fe9%2ff929%2f3334%2f8529%2f8529.jpg&ehk=NCT3DBdkkXGwuYs471Qdu02VE0mwCoM2xuebf1m7VaQ%3d&risl=&pid=ImgRaw&r=0",
+       "membershipLevel": "Gold",
+       "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     }
+   ]
+ }
+ 
