@@ -69,7 +69,7 @@ function toggleMenu() {
     img.src = src;
   }
   
-  /**************Directory*********************
+  /**************Directory*********************/
 // Fetch the data from the JSON file
 fetch('data.json')
   .then(response => response.json())
@@ -94,51 +94,27 @@ fetch('data.json')
   .catch(error => {
     console.log('Error:', error);
   });
-*/
-// Fetch the data from the JSON file
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    const companies = data.companies;
-    const businessCards = document.querySelector('.businessCards');
-    const gridButton = document.querySelector("#grid");
-    const listButton = document.querySelector("#list");
-    const display = document.querySelector("article");
 
-    // Function to display companies in grid view
-    const displayGrid = () => {
-      display.classList.add("grid");
-      display.classList.remove("list");
-    };
+// Add the "directory-grid" class to "directory-main" element on load
+document.getElementById("directory-main").classList.add("directory-grid");
 
-    // Function to display companies in list view
-    const displayList = () => {
-      display.classList.add("list");
-      display.classList.remove("grid");
-    };
+function toggleLayout() {
+  const directoryMain = document.getElementById("directory-main");
+  const gridButton = document.getElementById("grid");
+  const listButton = document.getElementById("list");
 
-    // Event listener for the grid button
-    gridButton.addEventListener("click", displayGrid);
+  if (directoryMain.classList.contains("directory-list")) {
+    directoryMain.classList.remove("directory-list");
+    directoryMain.classList.add("directory-grid");
+    gridButton.classList.add("active");
+    listButton.classList.remove("active");
+  } else {
+    directoryMain.classList.remove("directory-grid");
+    directoryMain.classList.add("directory-list");
+    listButton.classList.add("active");
+    gridButton.classList.remove("active");
+  }
+}
 
-    // Event listener for the list button
-    listButton.addEventListener("click", displayList);
-
-    // Loop through the company data and populate the sections
-    companies.forEach((company, index) => {
-      const section = businessCards.children[index];
-      if (section) {
-        section.innerHTML = `
-          <h2>${company.name}</h2>
-          <p>Address: ${company.address}</p>
-          <p>Phone: ${company.phone}</p>
-          <p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
-          <img src="${company.image}" alt="${company.name}" />
-          <p>Membership Level: ${company.membershipLevel}</p>
-          <p>${company.otherInfo}</p>
-        `;
-      }
-    });
-  })
-  .catch(error => {
-    console.log('Error:', error);
-  });
+document.getElementById("grid").addEventListener("click", toggleLayout);
+document.getElementById("list").addEventListener("click", toggleLayout);

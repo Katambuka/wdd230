@@ -229,7 +229,7 @@ main {
   margin-top: 5%;
   margin-bottom: 2px;
 }
-
+/*
 main section, main div {
   background-color: #f0f0f0;
   border: 1px solid #0056b3;
@@ -238,7 +238,7 @@ main section, main div {
   padding: 20px;
   border-radius: 1px;
   margin: 5px;
-}
+}*/
 
 #condition {
   display: block;
@@ -481,7 +481,7 @@ form label.top input:required:invalid {
 }
 
 form label.top input:required:valid {
-  border-top: green solid 3px;
+  border-bottom: green solid 3px;
 }
 
 input[type="text"],
@@ -513,7 +513,7 @@ textarea:focus {
 #directory-main div {
   border: none;
   background-color: white;
-  margin: 0;
+  margin: 0 auto;
 }
 
 #layoutBtn {
@@ -531,10 +531,6 @@ textarea:focus {
 .directory-grid .businessCards section {
   padding: 5%;
   box-shadow: 8px 8px 7px #1c2f3c;
-}
-
-.directory-grid .businessName {
-  display: none;
 }
 
 /*Directory List*/
@@ -585,10 +581,6 @@ section {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
 }
-.list img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
-}
 .grid p {
   text-align: start;
   font-family: sans-serif
@@ -596,3 +588,21 @@ section {
 section img {
 	height: 75px;
 	max-width: 100%}
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  
+  .list section > * {
+    margin: 0 1rem;
+  }
+  
+  .list section img {
+    display: none; 
+  }
+  
+  .list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+  }
