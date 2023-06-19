@@ -5,7 +5,7 @@
        "address": "Dubai, UAE",
        "phone": "+971 123456789",
        "website": "https://www.emirates.com/",
-       "image": "chamber/images/emiratesupdates.jpg",
+       "image": "images/emiratesupdates.jpg",
        "membershipLevel": "Gold",
        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
      },
@@ -23,7 +23,7 @@
        "address": "Dubai, UAE",
        "phone": "+971 345678901",
        "website": "https://www.jumeirah.com/",
-       "image": "chamber/images/153050837.jpg",
+       "image": "images/153050837.jpg",
        "membershipLevel": "Bronze",
        "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
      },
@@ -32,7 +32,7 @@
        "address": "Dubai, UAE",
        "phone": "+971 456789012",
        "website": "https://www.emaar.com/",
-       "image": "chamber/images/17_Emaar.jpg",
+       "image": "images/17_Emaar.jpg",
        "membershipLevel": "Gold",
        "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
      },
@@ -41,7 +41,7 @@
        "address": "Dubai, UAE",
        "phone": "+971 567890123",
        "website": "https://www.emiratesnbd.com/",
-       "image": "chamber/images/NBD.jpeg",
+       "image": "images/NBD.jpeg",
        "membershipLevel": "Silver",
        "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
      },
@@ -68,7 +68,7 @@
        "address": "Dubai, UAE",
        "phone": "+971 890123456",
        "website": "https://www.etisalat.ae/",
-       "image": "chamber/images/GBN_Etisalat.jpg",
+       "image": "images/GBN_Etisalat.jpg",
        "membershipLevel": "Silver",
        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
      },
@@ -86,7 +86,7 @@
        "address": "Dubai, UAE",
        "phone": "+971 123456789",
        "website": "https://www.majidalfuttaim.com/",
-       "image": "chamber/images/majid.jpeg",
+       "image": "images/majid.jpeg",
        "membershipLevel": "Gold",
        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
      }
