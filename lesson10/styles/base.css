@@ -40,6 +40,10 @@ figcaption{
    color: green;
    text-decoration: underline dotted rgb(193, 167, 167);
 }
+figure {
+   margin: 0;
+}
+
 .container {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
