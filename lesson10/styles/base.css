@@ -50,4 +50,9 @@ figcaption{
    margin: 10px auto;
    padding: 0 20px;
  }
+ footer {
+   margin-bottom: 15%;
+   padding: 10px;
+   color:#000;
+ }
  
