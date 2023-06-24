@@ -180,6 +180,7 @@ h3 {
   text-shadow: .25rem .25rem .75rem #0c1115;
 }
 
+
 p {
   font-size: 16px;
   margin-bottom: 10px;
@@ -233,27 +234,55 @@ main {
 
 #condition {
   display: block;
-  color: #000;
+  color: #fff;
   margin-top: 25px;
+}
+#temperature {
+  font-weight: bold;
+  color: #fff;
 }
 
 .weather {
   box-sizing: border-box;
   padding: 2%;
+  background-color: rgb(11, 11, 60);
 }
+
 #windSpeed, #windChill {
-  color: #0056b3;
+  color: #fff;
   font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
 }
 .weather div {
   height: 30%;
   width: 80%;
-  border: none;
+  border: 1 solid #000;
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: rgb(11, 19, 11);
 }
+section.weather h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section.weather p {
+  color: #fff;
+  font-size: 16px;
+}
+
+section.weather hr {
+  border: none;
+  border-top: 1px solid red;
+  margin: 10px 0;
+}
+section.weather span {
+  font-weight: bold;
+  color: blue;
+}
+
 
 .spotlight {
   background-color: #fff;
@@ -305,6 +334,21 @@ main {
   font-size: 14px;
   text-align: center;;
 }
+.join-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
+
 img {
   object-fit: cover;
 }
