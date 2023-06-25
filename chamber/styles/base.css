@@ -407,10 +407,13 @@ div.map p {
 div.map a {
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  #weatherIcon {
+    width: 100%;
+    height: auto;
+  }
+}
 
-/*.noDisplay {
-  display: none;
-}*/
 
 .baner{
   width: 100%;

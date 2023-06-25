@@ -118,3 +118,38 @@ function toggleLayout() {
 
 document.getElementById("grid").addEventListener("click", toggleLayout);
 document.getElementById("list").addEventListener("click", toggleLayout);
+
+
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const companies = data.companies;
+
+    if (companies.length > 0) {
+      const randomCompanies = getRandomCompanies(companies, 3);
+
+      const spotlightSections = document.getElementsByClassName("spotlight");
+
+      Array.from(spotlightSections).forEach((spotlightSection, index) => {
+        const company = randomCompanies[index];
+
+        spotlightSection.innerHTML = `
+          <h3>${company.name}</h3>
+          <p>${company.address}</p>
+          <p>Phone: ${company.phone}</p>
+          <p><a href="${company.website}">Website</a></p>
+          <img src="${company.image}" alt="${company.name}">
+          <p>Membership Level: ${company.membershipLevel}</p>
+          <p>${company.otherInfo}</p>
+        `;
+      });
+    }
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+
+function getRandomCompanies(arr, count) {
+  const shuffled = arr.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
