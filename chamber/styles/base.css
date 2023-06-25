@@ -310,22 +310,35 @@ section.weather span {
   border-radius: 8px;
   
 }
-/*
-.medium-display button {
-  color: white;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.spotlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
-.medium-display button a {
-  text-decoration: none;
+
+.spotlight section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.medium-display button:hover {
-  color: tomato;
+
+.spotlight img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  grid-column: 1 / span 3;
+}
+
+.spotlight h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.spotlight p {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 /* Styling for the paragraph */

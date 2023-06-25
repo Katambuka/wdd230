@@ -1,6 +1,4 @@
 
-  /**************Directory*********************/
-// Fetch the data from the JSON file
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
@@ -34,11 +32,13 @@ function toggleLayout() {
   const listButton = document.getElementById("list");
 
   if (directoryMain.classList.contains("directory-list")) {
+    // Switch to grid layout
     directoryMain.classList.remove("directory-list");
     directoryMain.classList.add("directory-grid");
     gridButton.classList.add("active");
     listButton.classList.remove("active");
   } else {
+    // Switch to list layout
     directoryMain.classList.remove("directory-grid");
     directoryMain.classList.add("directory-list");
     listButton.classList.add("active");
@@ -46,8 +46,6 @@ function toggleLayout() {
   }
 }
 
+// Event listeners for grid and list buttons
 document.getElementById("grid").addEventListener("click", toggleLayout);
 document.getElementById("list").addEventListener("click", toggleLayout);
-
-
- 
