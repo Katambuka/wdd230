@@ -1,23 +1,3 @@
-/*function calculateWindChill(temperature, windSpeed) {
-        if (temperature <= 50 && windSpeed > 3.0) {
-            let windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
-            return windChill.toFixed(2);
-        } else {
-            return "N/A";
-        }
-    }
-
-    let temperature = 25;
-    let windSpeed = 2.5;
-    let windChillFactor = calculateWindChill(temperature, windSpeed);
-
-    let windSpeedElement = document.getElementById("windSpeed");
-    windSpeedElement.textContent = windSpeed;
-
-    let windChillElement = document.getElementById("windChill");
-    windChillElement.textContent = (windChillFactor !== "N/A") ? windChillFactor : "N/A";*/
-
-    /*-----------------windchill-------------*/
 const Url = "https://api.openweathermap.org/geo/1.0/direct?q=Dubai&limit=1&appid=aae80cacc204382d239af2c8dfeb0af9";
 
 async function apiFetch() {
@@ -47,6 +27,7 @@ async function weatherFetch(lat, lon) {
       const windDeg = weatherData.wind.deg;
       const weatherDescription = weatherData.weather[0].description;
       const weatherIcon = weatherData.weather[0].icon;
+      const humidity = weatherData.main.humidity;
 
       document.getElementById("temperature").innerHTML = temperature.toFixed(0);
       document.getElementById("windSpeed").innerHTML = windSpeed.toFixed(1);
@@ -54,6 +35,7 @@ async function weatherFetch(lat, lon) {
       document.getElementById("condition").innerHTML = weatherDescription;
       document.getElementById("weatherIcon").setAttribute("src", `https://openweathermap.org/img/wn/${weatherIcon}.png`);
       document.getElementById("weatherIcon").setAttribute("alt", weatherDescription);
+      document.getElementById("humidity").innerHTML = humidity; 
     } else {
       throw Error(await response2.text());
     }

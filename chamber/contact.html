@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+   <meta charset="UTF-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="The Dubai Chamber of Commerce & Industry is a non-profit organization that supports businesses in Dubai.
+   They provide networking opportunities, business resources, and advocacy for companies looking to grow in the region.">
+   <meta name="author" content="Nathank">
+   <meta name="keywords" content="web front end">
+   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="stylesheet" href="styles/medium.css" >
+   <link rel="stylesheet" href="styles/large.css" >
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
+   <title>Dubai Chamber of commerce</title>
+ </head>
+ <body class="clearfix">
+  <header>
+    <div class="head">
+      <div class="container">
+        <nav id="navigation">
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <picture><img src="images/logo.jpg" alt="logo" height="300" width="400"></picture>
+          <a href="index.html"></a>
+          <ul id="primaryNav" class="menu-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socialmedia">
+          <ul>
+            <li><a href="https://instagram.com/nathank2?igshid=ZmZhODViOGI=" class="fab fa-instagram" aria-label="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100063537615114" class="fab fa-facebook-square" aria-label="Facebook"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="current-date">
+      <div id="date-now"></div>
+    </div>
+  </header> 
+  <main>
+    <h1>Contact Information</h1>
+<form method="get" action="thankyou.html" id="contact-form" class="contact-form">
+  <label for="name" class="top">Name *</label>
+  <input type="text" id="name" name="name" placeholder="Joe Smith" required>
+  <br><br>
+
+  <label for="organization" class="top">Organization *</label>
+  <input type="text" id="organization" name="organization" placeholder="Company, Inc." required>
+  <br><br>
+
+  <label for="mailing-address" class="top">Mailing Address *</label>
+  <input type="text" id="mailing-address" name="mailing-address" placeholder="123 Example Street" required>
+  <br><br>
+
+  <label for="mailing-address-line2" class="top">Mailing Address line 2</label>
+  <input type="text" id="mailing-address-line2" name="mailing-address-line2" placeholder="Suite 900">
+  <br><br>
+
+  <label for="city" class="top">City</label>
+  <input type="text" id="city" name="city" placeholder="Deira">
+  <br><br>
+
+  <label for="state" class="top">State *</label>
+  <input type="text" id="state" name="state" placeholder="MN" required>
+  <br><br>
+
+  <label for="postal-code" class="top">Postal Code</label>
+  <input type="text" id="postal-code" name="postal-code" pattern="[0-9]+" placeholder="54321">
+  <br><br>
+
+  <label for="country" class="top">Country *</label>
+  <input type="text" id="country" name="country" placeholder="United Arab Emirates" required>
+  <br><br>
+
+  <label for="phone" class="top">Phone *</label>
+  <input type="tel" id="phone" name="phone" placeholder="1234567" required>
+  <br><br>
+
+  <label for="email" class="top">Email *</label>
+  <input type="email" id="email" name="email" placeholder="youremail@domain.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+  <br><br>
+
+  <label for="contact-preference" class="top">Contact Preference; Email or Phone Call</label>
+  <select id="contact-preference" name="contact-preference" required class="contact-preference">
+    <option value="" disabled selected>Choose...</option>
+    <option value="yes">Yes Email</option>
+    <option value="no">No</option>
+  </select>
+  <br><br>
+
+  <label for="comments" class="top">Comments/Questions</label>
+  <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Type comments here." class="comments"></textarea>
+  <br><br>
+
+  <p>Dubai Chamber of Commerce will not sell your contact or email information. In order to serve your request, our office shares information with chamber member businesses who can provide you with additional information. Please indicate below if we may share your request for information:</p>
+
+  <input type="radio" id="release-yes" name="release-info" value="yes" class="release-yes">
+  <label for="release-yes">Yes, you may release this information.</label>
+  <br>
+  <input type="radio" id="release-no" name="release-info" value="no" class="release-no">
+  <label for="release-no">No, please do not release this information.</label>
+  <br><br>
+
+  <input type="submit" value="Submit" class="submitBtn">
+</form>
+</main>
+<footer>
+  <div class="footer-container">
+     <div>
+      <picture><img src="images/logo.jpg" alt="logo" height="300" width="400"></picture>
+     </div>
+     <div class="contact-info">
+       <p>Dubai </p>
+       <p>123 sheik zayeed Street, Dubai, Dubaya</p>
+       <p>Phone: +971-456-7890</p>
+     </div>
+     <div class="map">
+       <a href="https://www.google.com/maps/place/25.271816338824727,55.30609081537187" target="_blank">Location <span>&#128205;</span>
+       </a>
+     </div>
+   </div>
+   <hr>
+   <div><p id="visits"></p></div>
+   <div class="rights"> &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI </div>
+  </footer>    
+  <script src="scripts/main.js"></script>
+  <script src="scripts/contact.js"></script>
+  </body>
+  </html>

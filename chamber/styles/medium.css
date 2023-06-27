@@ -107,7 +107,7 @@
     border-radius: 1%;
   }
 
-}
+
 
 /*Directory Styles*/
 .businessCards section {
@@ -124,4 +124,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 15px;
+}
+form {
+  max-width: 698px;
+}
 }

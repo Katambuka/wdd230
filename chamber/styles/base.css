@@ -256,7 +256,6 @@ main {
 .weather div {
   height: 30%;
   width: 80%;
-  border: 1 solid #000;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -483,6 +482,20 @@ picture img {
 }
 
 /***********join**************/
+form {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
 form fieldset {
   margin: 2rem auto;
@@ -544,7 +557,7 @@ textarea {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 3px;
-  box-sizing: border-box;
+  font-size: 14px;
 }
 
 input:focus,
@@ -657,3 +670,43 @@ section img {
     font-size: 1rem;
     font-family: Roboto, Helvetica, sans-serif;
   }
+
+  /****************contactpage**************/
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  input[type="submit"] {
+    background-color: #337ab7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  input:required:invalid {
+    border-color: red;
+  }
+  
+  input:required:valid {
+    border-color: green;
+  }
+  
