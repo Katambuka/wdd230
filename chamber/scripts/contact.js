@@ -1,45 +1,4 @@
-/*****************Contact**************
-document.addEventListener('DOMContentLoaded', () => {
-   const form = document.getElementById('contact-form');
-   form.addEventListener('submit', (event) => {
-     event.preventDefault(); // Prevent form submission
- 
-     // Perform form validation
-     const nameInput = document.getElementById('name');
-     const emailInput = document.getElementById('email');
- 
-     const name = nameInput.value.trim();
-     const email = emailInput.value.trim();
- 
-     if (name === '') {
-       alert('Please enter your name.');
-       nameInput.focus();
-       return;
-     }
- 
-     if (email === '') {
-       alert('Please enter your email address.');
-       emailInput.focus();
-       return;
-     }
- 
-     if (!validateEmail(email)) {
-       alert('Please enter a valid email address.');
-       emailInput.focus();
-       return;
-     }
- 
-     // Form is valid, proceed with submission
-     alert('Form submitted successfully!');
-     form.reset();
-   });
- 
-   const validateEmail = (email) => {
-     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-     return re.test(email);
-   };
- });*/
- //spotlight display
+
 
  fetch('data.json')
   .then(response => response.json())
