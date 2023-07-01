@@ -16,7 +16,7 @@
        "website": "https://thedubaimall.com/",
        "image": "https://miro.medium.com/max/6000/1*iJyYvnbQ56C1VEx1BP9PYA.jpeg",
        "membershipLevel": "Silver",
-       "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+       "otherInfo": "Dubai Mall, a shopper's paradise, boasts luxurious boutiques, captivating attractions like the Dubai Aquarium, and delectable culinary delights, enticing visitors from around the globe."
      },
      {
        "name": "Jumeirah Group",
@@ -25,7 +25,7 @@
        "website": "https://www.jumeirah.com/",
        "image": "images/153050837.jpg",
        "membershipLevel": "Bronze",
-       "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+       "otherInfo": "Jumeirah Group, a renowned luxury hospitality brand, offers exquisite resorts, world-class dining, and unparalleled service, providing unforgettable experiences for discerning travelers."
      },
      {
        "name": "Emaar Properties",
@@ -34,7 +34,7 @@
        "website": "https://www.emaar.com/",
        "image": "images/17_Emaar.jpg",
        "membershipLevel": "Gold",
-       "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+       "otherInfo": "Emar Properties, a leading real estate development company, creates iconic structures and innovative projects that redefine luxury living and shape city skylines. Experience exceptional properties and a lifestyle of elegance and sophistication with Emar Properties."
      },
      {
        "name": "Emirates NBD",
@@ -43,7 +43,7 @@
        "website": "https://www.emiratesnbd.com/",
        "image": "images/NBD.jpeg",
        "membershipLevel": "Silver",
-       "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       "otherInfo": "Emirates NBD: Leading Middle East bank with diverse financial services for individuals and businesses. Experience excellence in banking."
      },
      {
        "name": "Nakheel",
