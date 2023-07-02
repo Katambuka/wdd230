@@ -25,7 +25,7 @@ header {
   width: 100%;
 }
 #visits {
-  color: green;
+  color: #fff;
 }
 .current-date {
   background-color: #0f1011;
@@ -84,7 +84,7 @@ nav ul li.active a {
 }
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
-  color: #ddc1c1;
+  color: #fff;
 }
 nav ul {
   display: none;
@@ -92,9 +92,6 @@ nav ul {
 nav ul.open {
   display: block;
   background-color: #007bff;
-}
-nav ul.hide {
-  display: none;
 }
 
 #hamburgerBtn {
@@ -145,10 +142,13 @@ nav ul.hide {
 
 #hero-banner h2 {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: #fff;
   text-shadow: 2px 2px 5px #000;
-  margin-left: 3%;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 #hero-banner a {
@@ -174,6 +174,7 @@ nav ul.hide {
   object-fit: cover;
 }
 
+
 h1 {
   font-size: 26px;
   font-weight: bold;
@@ -194,6 +195,7 @@ p {
   margin-bottom: 10px;
   padding: 20px;
 }
+
 .socialmedia {
   display: contents;
   margin-right: 10px;
@@ -220,7 +222,16 @@ p {
   padding: 10px;
   margin-right: 0;
 }
+.socialmedia img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
 
+.socialmedia img:hover {
+  transform: scale(1.2);
+}
 
 .current-date {
   text-align: center;
@@ -228,11 +239,6 @@ p {
 
 #date-now {
   font-size: 1.2rem;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
 }
 
 main {
@@ -375,9 +381,10 @@ img {
 }
 
 footer {
-  color: #000;
+  color: #fff;
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(to bottom, #0056b3, #0046c0);
 }
 .footer-container {
   display: grid;
@@ -428,12 +435,12 @@ div.map p {
 div.map a {
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  #weatherIcon {
+
+#weatherIcon {
     width: 100%;
     height: auto;
   }
-}
+
 
 .baner {
   width: 100%;

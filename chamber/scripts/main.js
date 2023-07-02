@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.pagevisit = 1;
   }
   const totalVisits = localStorage.pagevisit; 
-  document.getElementById('visits').textContent = "They are " + totalVisits + " visits on this page.";
+  document.getElementById('visits').textContent = "Your are " + totalVisits + " to visit this page.";
   
   /* Images lazyloading*/
   document.addEventListener("DOMContentLoaded", () => {
