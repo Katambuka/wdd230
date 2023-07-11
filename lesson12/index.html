@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dubai chamber of commerce website">
+    <meta name="keywords" content="Carlsbad, natural, healthy, organic,food">
+    <meta name="author" content="Nathank">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
+    <title>Carlsbad Bountiful Foods</title>
+  </head>
+  <body>
+   <header class="head">
+      <div class="containerNav">
+        <nav id="navigation">
+          <a href="index.html" class="logo"><img src="#" alt="logo"></a>
+          <h1>Carlsbad</h1>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav" class="menu-left">
+            <li><a href="#index.html" target="blank">Home</a></li>
+            <li><a href="fresh.html" target="blank">Fresh</a></li>
+            <li><a href="about.html" target="blank">About Us</a></li>
+          </ul>
+        </nav>
+      </div> v
+    </header>
+   <main>
+    <div class="offers" id="offer">
+      <span>Exclusive offers on fridays joins us for a 20% discount on our branches.</span>
+    </div>
+    <section id="hero-banner">
+      <p>
+        Providing locally grown produce to Southern California
+        <a href="fresh.html" class="button">Make Your Own Fruit Drink</a>
+      </p>
+      <picture>
+        <source media="(max-width: 390px)" srcset="#">
+        <source media="(max-width: 690px)" srcset="#">
+        <source media="(max-width: 1002px)" srcset="#">
+        <img src="images/emirates.jpeg" alt="hero-image">
+      </picture>
+    </section>
+
+    <section>
+      <h2 class="product-heading">Trending products</h2>
+      <div class="container">
+        <div class="cards">
+          <picture>
+            <img src="images/salad.jpg" alt="salad" loading="lazy" width="1200" height="800" />
+          </picture>
+          <div class="description">
+            <p>This is the best of kind with nutritious healthier prepared to make a difference in your life</p>
+          </div>
+        </div>
+        <a href="fresh.html" class="cards">
+          <picture>
+            <img src="images/mixed-fruits.jpg" alt="variety" loading="lazy" width="1200" height="800" />
+          </picture>
+          <div class="description">
+            <h2>Trending product</h2>
+            <p>This is the best of kind with nutritious healthier prepared to make a difference in your life</p>
+          </div>
+        </a>
+        <div class="cards">
+          <picture>
+            <img src="images/mied.jpg" alt="mixed-fruits" loading="lazy" width="1200" height="800" />
+          </picture>
+          <div class="description">
+            <h2>Trending product</h2>
+            <p>This is the best of kind with nutritious healthier prepared to make a difference in your life</p>
+          </div>
+        </div>
+        <div class="cards">
+          <picture>
+            <img src="images/pina.jpg" alt="pinapples" loading="lazy" width="1200" height="800" />
+          </picture>
+          <div class="description">
+            <h2>Trending product</h2>
+            <p>This is the best of kind with nutritious healthier prepared to make a difference in your life</p>
+          </div>
+        </div>
+        <div class="cards">
+          <picture>
+            <img src="images/juicy.jpg" alt="juicy" loading="lazy" width="1200" height="800" />
+          </picture>
+          <div class="description">
+            <h2>Trending product</h2>
+            <p>This is the best of kind with nutritious healthier prepared to make a difference in your life</p>
+          </div>
+        </div>
+        <div class="cards">
+          <picture>
+            <img src="images/hero.jpg" alt="hero" loading="lazy" width="1200" height="800" />
+          </picture>
+          <div class="description">
+            <h2>Trending product</h2>
+            <p>This is the best of kind with nutritious healthier prepared to make a difference in your life</p>
+          </div>
+        </div>
+      </div>
+    </section>    
+    
+    <section class="weather">
+      <h2 class="weather-heading">Carlsbad Weather</h2>
+      <div class="weather-container">
+        <div class="weather-card">
+          <div class="weather-icon">
+            <img id="icon" src="#" alt="weather-icon" />
+            <p id="temperature" class="temperature">-- °F</p>
+            <p id="condition" class="condition">--</p>
+            <p id="humidity" class="humidity">--%</p>
+          </div>
+          <div class="forecast-card">
+            <h3 class="forecast-heading">3-Day Forecast</h3>
+            <div class="forecast-container">
+              <div class="day forecast-day">
+                <h4 class="forecast-day-heading">Day 1</h4>
+                <div class="forecast-day-info">
+                  <p class="forecast-day-temp"></p>
+                  <div class="forecast-day-temperature">
+                    <span class="forecast-day-hi" id="day1Hi"></span>
+                    <span class="forecast-day-low" id="day1Lo"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="day forecast-day">
+                <h4 class="forecast-day-heading">Day 2</h4>
+                <div class="forecast-day-info">
+                  <p class="forecast-day-temp"></p>
+                  <div class="forecast-day-temperature">
+                    <span class="forecast-day-hi" id="day2Hi"></span>
+                    <span class="forecast-day-low" id="day2Lo"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="day forecast-day">
+                <h4 class="forecast-day-heading">Day 3</h4>
+                <div class="forecast-day-info">
+                  <p class="forecast-day-temp"></p>
+                  <div class="forecast-day-temperature">
+                    <span class="forecast-day-hi" id="day3Hi"></span>
+                    <span class="forecast-day-low" id="day3Lo"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coastal-areas">
+      <h2>Summary about southern California coast</h2>
+      <p>
+        One popular coastal area in Southern California is Santa Monica.
+        Located west of downtown Los Angeles,Santa Monica is known for its
+        beautiful beaches and lively pier with a wide range of attractions,
+        such as an amusement park, aquarium, and restaurants. Another notable
+        coastal area is Laguna Beach, located about an hour south of Los
+        Angeles. The area is known for its picturesque coves and clear blue
+        waters, as well as its charming downtown area with art galleries and
+        boutiques. Further south, San Diego is home to several beautiful
+        coastal communities, such as La Jolla and Coronado Island. La Jolla is
+        known for its stunning coastline and cliffs, as well as its
+        world-renowned research institutions, such as the Scripps Institution
+        of Oceanography. Coronado Island is famous for its historic Hotel Del
+        Coronado, which has been a popular destination for celebrities and
+        presidents since the late 1800s. Overall, the Southern California
+        coast offers a variety of beautiful and unique coastal areas to
+        explore and enjoy.
+      </p>
+      <div class="coastal">
+        <a href="https://www.discoverlosangeles.com/">Los Angeles</a>
+        <figure>
+          <img src="images/losAngels.jpg" alt="LosAngels" />
+          <figcaption>LosAngels Tourism</figcaption>
+        </figure>
+        <a href="https://www.sandiego.org/">San Diego</a>
+        <figure>
+          <img src="images/carlsbad.jpg" alt="Beach" />
+        </figure>
+      </div>
+    </section>
+
+   </main>
+   <footer>
+    <div class="socialmedia">
+      <a href="https://instagram.com/nathank2?igshid=ZmZhODViOGI=" target="_blank"><img src="images/instagram.png" alt="instagram" class="instagram-logo"></a>
+      <a href="https://www.facebook.com/profile.php?id=100063537615114" target="_blank"><img src="images/facebook.png" alt="facebook" class="fb-logo"></a>
+      <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="linkedin-logo"></a>
+    </div>
+    &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI.
+  </footer>
+   <script src="scripts/main.js"></script>
+  </body>
+</html>

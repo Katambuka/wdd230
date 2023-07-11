@@ -1,0 +1,59 @@
+@media (min-width: 60em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+	.containerNav {
+	  width: 960px;
+	  margin: 0 auto;
+	}
+	.menu-left {
+	  display: flex;
+	  flex: 1;
+	  justify-content: flex-start;
+	}
+	.nav-toggle {
+	  display: none;
+	}
+	.menu-right {
+	  display: flex;
+	  justify-content: flex-end;
+	  flex: 1;
+	}
+   .menu-left li {
+      margin-left: 1rem;
+    }
+  
+    #hamburgerBtn {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+    }
+  
+    #primaryNav {
+      margin-left: auto;
+    }
+
+    .forecast-day {
+      flex: 0 0 calc(70.33% - 10px);
+    }
+
+    .weather-card {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 900px;
+      width: 100%;
+    }
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .coastal {
+      gap: 40px;
+    }
+    .coastal {
+      gap: 60px;
+    }
+}

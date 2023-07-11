@@ -1,0 +1,139 @@
+@media (min-width: 38.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+	main img {
+		display: block;
+	}
+	.containerNav {
+		width: 100%;
+		padding: 0 20px;
+	 }
+	 .menu-left {
+		display: flex;
+		flex: 1;
+		justify-content: flex-start;
+	}
+	nav button {
+      display: none;
+   }
+   nav ul#primaryNav {
+      display: flex;
+      margin-left: 2vw;
+      justify-content: center;
+   }
+   nav ul li a {
+      border: none;
+   }
+	nav {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+	 }
+	 
+	 .menu-left {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+	 }
+	 
+	 .menu-left li {
+		margin-left: 20px;
+	 }
+	 
+	 .menu-left li a {
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #000;
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
+	 }
+	 
+	 .menu-left li a:hover {
+		color: #0077b5;
+	 }
+
+    .forecast-day {
+      flex: 0 0 calc(50% - 10px);
+    }
+
+    .weather-card {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 600px;
+      width: 100%;
+    }
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .coastal {
+      flex-wrap: wrap;
+    }
+  
+    .coastal-card {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+
+    /**********footer***************/
+    footer {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    
+    .socialmedia {
+      display: flex;
+      align-items: center;
+    }
+    
+    .socialmedia h2 {
+      margin-right: 20px;
+    }
+    
+    .socialmedia a {
+      color: #fff;
+      font-size: 24px;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    
+    .socialmedia a:hover {
+      color: #ff0;
+    }
+    
+    .terms {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    #lastmodified a:hover {
+      color: #ff0;
+    }
+    
+    .terms a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    
+    .terms a:hover {
+      color: #ff0;
+    }
+    
+}
