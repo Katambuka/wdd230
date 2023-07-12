@@ -39,7 +39,7 @@ header {
   display: block;
 }
 
-#offer {
+#meetAndGreet {
   background-color: #0056b3;
   padding: 5px;
   border: 1px solid tomato;
@@ -50,7 +50,7 @@ header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#offer span {
+#meetAndGreet span {
   font-size: 16px;
   color: #fff;
 }

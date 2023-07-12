@@ -11,10 +11,13 @@ x.onclick = toggleMenu;
     month: "long",
     year: "numeric"
   };
-  document.getElementById('lastmodified').textContent = new Date().toLocaleDateString('en-US', options)
   document.getElementById('date-now').textContent = new Date().toLocaleDateString('en-US', options)
   const currentYear = new Date().getFullYear();
   document.getElementById('year').textContent = currentYear;
+
+  const lastModified = document.lastModified;
+const formattedDate = new Date(lastModified).toLocaleString('en-US', options);
+document.getElementById("lastModified").innerHTML = formattedDate;
   
   const currentDate = new Date().getDate;
   if (currentDate === 1 || currentDate ===2 ) {
