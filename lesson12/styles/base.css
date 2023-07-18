@@ -27,7 +27,7 @@ main {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f8f8f8;
+  background: linear-gradient(green, white);
 }
 
 h1 {
@@ -193,8 +193,82 @@ nav ul.open {
 
 section img {
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
+
+/*********hero**********/
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
+  border-radius: 10px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.85rem;
+ 
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button:hover {
+  background-color: #d0e2ab;
+}
+
+hr {
+  color: #0056b3;
+}
+.specialty-drinks {
+  background-color: transparent;
+  padding: 50px;
+  text-align: center;
+}
+
+.specialty-drinks h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.specialty-drinks p.instructions {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.specialty-drinks .button:hover {
+  background-color: #fff;
+}
+
 
 /************Trending items***********/
 .product-heading {
@@ -210,30 +284,32 @@ section img {
 }
 
 .cards {
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  max-width: 200pxpx;
+  height: 500px;
 }
 
-.cards picture img {
+.cards figure img {
   width: 100%;
   height: auto;
   display: block;
 }
 
 .description {
-  padding: 20px;
+  padding: 10px;
 }
 
 .description h2 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .description p {
   font-size: 14px;
-  color: #777;
+  color: #000;
   margin-bottom: 0;
 }
 
@@ -248,6 +324,7 @@ section img {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #4CAF50;
 }
 
 .weather-container {
@@ -256,17 +333,17 @@ section img {
 }
 
 .weather-card {
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   padding: 20px;
   max-width: 400px;
   width: 100%;
 }
 
 .weather-icon img {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 10px;
 }
 
@@ -278,13 +355,13 @@ section img {
 
 .condition {
   font-size: 16px;
-  color: #777;
+  color: #000;
   margin-bottom: 10px;
 }
 
 .humidity {
   font-size: 16px;
-  color: #777;
+  color: #000;
   margin-bottom: 20px;
 }
 
@@ -304,7 +381,7 @@ section img {
   flex: 0 0 100%;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -324,7 +401,7 @@ section img {
 
 .forecast-day-temp {
   font-size: 14px;
-  color: #777;
+  color: #fff;
   margin-right: 5px;
 }
 
@@ -344,26 +421,32 @@ section img {
 
 /****************social media*****/
 .socialmedia {
-  display: block;
-  align-items: center;
-  float: right;
+  display: contents;
+  margin-right: 10px;
 }
-
-.socialmedia h2 {
-  margin-right: 20px;
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socialmedia a {
-  color: #fff;
-  font-size: 24px;
-  margin-right: 10px;
+  font-size: 30px;
   text-decoration: none;
+  margin-left: 1rem;
+  color: #fff;
 }
 
 .socialmedia a:hover {
-  color: #ff0;
+  color: tomato;
 }
 
+.socialmedia img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
 footer {
   margin-top: 20px;
   padding: 10px;
@@ -374,6 +457,14 @@ footer {
   background: green
 }
 
+a:link {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
 
 /*************************coastal section ************************/
 
@@ -397,12 +488,12 @@ footer {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #000;
   transition: all 0.3s ease;
 }
 
 .coastal a:hover {
-  color: #009688;
+  color: green;
 }
 
 .coastal figure {
@@ -427,6 +518,7 @@ footer {
 }
 
 /***********page 2************/
+
 /*----------fresh page----*/
 /* style the form */
 .drink-order-form {

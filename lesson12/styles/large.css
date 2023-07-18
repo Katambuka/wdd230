@@ -40,15 +40,15 @@
     }
 
     .weather-card {
-      background-color: #f5f5f5;
+      background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
       padding: 20px;
       max-width: 900px;
       width: 100%;
     }
     .container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
    }
 
     .coastal {
