@@ -1,4 +1,4 @@
-@media (min-width: 38.5em) {
+@media only screen and (min-width: 38rem) {
 	nav {
 		flex-direction: row;
 	}
@@ -88,41 +88,13 @@
     }
 
     /**********footer***************/
-    footer {
-      background-color: #333;
-      color: #fff;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 20px;
-    }
-    
-    .socialmedia {
-      display: flex;
-      align-items: center;
-    }
-    
-    .socialmedia h2 {
-      margin-right: 20px;
-    }
-    
-    .socialmedia a {
-      color: #fff;
-      font-size: 24px;
-      margin-right: 10px;
-      text-decoration: none;
-    }
-    
-    .socialmedia a:hover {
-      color: #ff0;
-    }
     
     .terms {
       display: flex;
       justify-content: flex-end;
     }
     
-    #lastmodified a:hover {
+    #lastModified a:hover {
       color: #ff0;
     }
     
@@ -135,5 +107,89 @@
     .terms a:hover {
       color: #ff0;
     }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+    /* Style for card descriptions */
+    .description {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    /* Style for card titles */
+    .description h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    /* Style for card text */
+    .description p {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    .search-bar {
+      width: 300px;
+      margin: 0 10px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 1rem;
+      margin: 1rem;
+    }
     
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 1rem;
+      margin: 0;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+    /* Style for card descriptions */
+    .description {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    /* Style for card titles */
+    .description h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    /* Style for card text */
+    .description p {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    .search-bar {
+      width: 300px;
+      margin: 0 10px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 1rem;
+      margin: 1rem;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 1rem;
+      margin: 0;
+    }
 }

@@ -1,4 +1,4 @@
-@media (min-width: 60em) {
+@media only screen and (min-width: 64rem) {
 	nav a {
 		font-size: 1.3rem;
 	}
@@ -53,8 +53,5 @@
 
     .coastal {
       gap: 40px;
-    }
-    .coastal {
-      gap: 60px;
     }
 }

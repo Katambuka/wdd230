@@ -517,6 +517,13 @@ picture img {
   object-fit: cover;
 }
 
+a:link {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
 /***********join**************/
 form {
   max-width: 450px;

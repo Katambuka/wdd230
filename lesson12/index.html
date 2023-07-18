@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css" >
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
     <title>Carlsbad Bountiful Foods</title>
   </head>
@@ -17,7 +18,7 @@
    <header class="head">
       <div class="containerNav">
         <nav id="navigation">
-          <a href="index.html" class="logo"><img src="#" alt="logo"></a>
+          <a href="index.html" class="logo"><img src="images/instagram.png" alt="logo"></a>
           <h1>Carlsbad</h1>
           <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
           <ul id="primaryNav" class="menu-left">
@@ -26,22 +27,25 @@
             <li><a href="about.html" target="blank">About Us</a></li>
           </ul>
         </nav>
-      </div> v
+      </div>
     </header>
    <main>
     <div class="offers" id="offer">
       <span>Exclusive offers on fridays joins us for a 20% discount on our branches.</span>
     </div>
     <section id="hero-banner">
+      <h2>Healthy and Organic Food Options</h2>
       <p>
         Providing locally grown produce to Southern California
         <a href="fresh.html" class="button">Make Your Own Fruit Drink</a>
       </p>
       <picture>
-        <source media="(max-width: 390px)" srcset="#">
-        <source media="(max-width: 690px)" srcset="#">
-        <source media="(max-width: 1002px)" srcset="#">
-        <img src="images/emirates.jpeg" alt="hero-image">
+        <source media="(max-width: 390px)" srcset="images/original.jpg">
+        <source media="(max-width: 690px)" srcset="images/original.jpg">
+        <source media="(max-width: 1002px)" srcset="images/original.jpg">
+        <img
+        src="images/original.jpg" alt="City view" data-src="images/original.jpg"
+        class="lazy-image" style="object-fit: cover; object-position: center">
       </picture>
     </section>
 
@@ -50,7 +54,7 @@
       <div class="container">
         <div class="cards">
           <picture>
-            <img src="images/salad.jpg" alt="salad" loading="lazy" width="1200" height="800" />
+            <img src="images/salad.jpg" alt="salad" loading="lazy" width="1200" height="800">
           </picture>
           <div class="description">
             <p>This is the best of kind with nutritious healthier prepared to make a difference in your life</p>
@@ -58,7 +62,7 @@
         </div>
         <a href="fresh.html" class="cards">
           <picture>
-            <img src="images/mixed-fruits.jpg" alt="variety" loading="lazy" width="1200" height="800" />
+            <img src="images/carrots.jpg" alt="variety" loading="lazy" width="1200" height="800">
           </picture>
           <div class="description">
             <h2>Trending product</h2>
@@ -67,7 +71,7 @@
         </a>
         <div class="cards">
           <picture>
-            <img src="images/mied.jpg" alt="mixed-fruits" loading="lazy" width="1200" height="800" />
+            <img src="images/organic2.jpg" alt="mixed-fruits" loading="lazy" width="1200" height="800">
           </picture>
           <div class="description">
             <h2>Trending product</h2>
@@ -76,7 +80,7 @@
         </div>
         <div class="cards">
           <picture>
-            <img src="images/pina.jpg" alt="pinapples" loading="lazy" width="1200" height="800" />
+            <img src="images/organic1.jpg" alt="pinapples" loading="lazy" width="1200" height="800">
           </picture>
           <div class="description">
             <h2>Trending product</h2>
@@ -85,7 +89,7 @@
         </div>
         <div class="cards">
           <picture>
-            <img src="images/juicy.jpg" alt="juicy" loading="lazy" width="1200" height="800" />
+            <img src="images/juicy.jpg" alt="juicy" loading="lazy" width="1200" height="800">
           </picture>
           <div class="description">
             <h2>Trending product</h2>
@@ -94,7 +98,7 @@
         </div>
         <div class="cards">
           <picture>
-            <img src="images/hero.jpg" alt="hero" loading="lazy" width="1200" height="800" />
+            <img src="images/pomegranate.jpg" alt="hero" loading="lazy" width="1200" height="800">
           </picture>
           <div class="description">
             <h2>Trending product</h2>
@@ -109,7 +113,7 @@
       <div class="weather-container">
         <div class="weather-card">
           <div class="weather-icon">
-            <img id="icon" src="#" alt="weather-icon" />
+            <img id="icon" src="#" alt="weather-icon">
             <p id="temperature" class="temperature">-- °F</p>
             <p id="condition" class="condition">--</p>
             <p id="humidity" class="humidity">--%</p>
@@ -176,12 +180,12 @@
       <div class="coastal">
         <a href="https://www.discoverlosangeles.com/">Los Angeles</a>
         <figure>
-          <img src="images/losAngels.jpg" alt="LosAngels" />
+          <img src="images/losAngels.jpg" alt="LosAngels">
           <figcaption>LosAngels Tourism</figcaption>
         </figure>
         <a href="https://www.sandiego.org/">San Diego</a>
         <figure>
-          <img src="images/carlsbad.jpg" alt="Beach" />
+          <img src="images/carlsbad.jpg" alt="Beach">
         </figure>
       </div>
     </section>
@@ -193,7 +197,7 @@
       <a href="https://www.facebook.com/profile.php?id=100063537615114" target="_blank"><img src="images/facebook.png" alt="facebook" class="fb-logo"></a>
       <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="linkedin-logo"></a>
     </div>
-    &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastModified"></span> |All rights reserved by BYUI.
+    <p>&copy;Nathank<span id="year"></span>Last Modified <span id="lastModified"></span>All rights reserved by BYUI.</p>
   </footer>
    <script src="scripts/main.js"></script>
   </body>

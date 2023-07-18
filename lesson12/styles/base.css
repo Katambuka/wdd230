@@ -12,12 +12,11 @@ body {
 /* Style the header */
 .head {
   color: #fff;
-  padding: 20px;
-  position: fixed;
   width: 100%;
   border-bottom: 0.0225rem solid #0056b3;
 }
-.head, footer {
+
+.head {
   background-color: #ffffff;
   height: 80px;
   z-index: 1000;
@@ -42,8 +41,7 @@ h1 {
   margin-left: auto;
 }
 
-h2 ,h3{
-  font-size: 14px;
+h2 , h3 {
   margin-bottom: 10px;
   text-align: center;
 }
@@ -56,8 +54,6 @@ p {
 /* Header styles */
 .containerNav {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 body {
@@ -76,9 +72,9 @@ body {
   margin-right: 1rem;
 }
 
-
+/*
 #offer {
-  background-color: #0056b3;
+  background-color: transparent;
   padding: 5px;
   border: 1px solid tomato;
   border-radius: 5px;
@@ -90,8 +86,8 @@ body {
 
 #offer span {
   font-size: 16px;
-  color: #fff;
-}
+  color: #000;
+}*/
 
 nav button {
   margin: 0.2rem 2vw;
@@ -110,9 +106,10 @@ nav ul {
   display: flex;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, auto);
+  margin-bottom: 20px;
+  text-align: center;
   justify-content: space-between;
 }
-
 
 nav ul li {
   margin-left: 0;
@@ -121,7 +118,7 @@ nav ul li {
 nav ul li a {
   padding: 0.5rem 2vw;
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 nav ul li.active a {
@@ -130,7 +127,7 @@ nav ul li.active a {
 
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
+  color: tomato;
 }
 
 
@@ -143,21 +140,19 @@ nav ul {
 }
 
 nav ul.open {
-  display: flex;
-  background-color: #007bff;
+  display: block;
+  background-color: transparent;
 }
 
 .menu-left {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
 }
 
 .menu-left li {
   margin-left: 0;
 }
-
 
 #hamburgerBtn {
   display: block;
@@ -167,22 +162,13 @@ nav ul.open {
   color: #000;
   margin-right: 1rem;
 }
-#navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 #primaryNav {
   list-style: none;
   margin: 0;
   padding: 0;
-  display:flex;
   font-size: 1.5rem;
-}
-
-#primaryNav li {
-  margin-left: 1rem;
+  width: 100%;
 }
 
 #primaryNav li a {
@@ -204,13 +190,13 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(2) {
   display: block;
 }
+
 section img {
   width: 100%;
   height: 200px;
 }
 
 /************Trending items***********/
-
 .product-heading {
   font-size: 24px;
   font-weight: bold;
@@ -356,62 +342,249 @@ section img {
   margin-right: 0;
 }
 
+/****************social media*****/
+.socialmedia {
+  display: block;
+  align-items: center;
+  float: right;
+}
 
-/******Coastallines**********/
+.socialmedia h2 {
+  margin-right: 20px;
+}
+
+.socialmedia a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.socialmedia a:hover {
+  color: #ff0;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  background: green
+}
+
+
+/*************************coastal section ************************/
+
 .coastal-areas {
   text-align: center;
-}
-
-.coastal-areas h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.coastal-areas p {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 20px;
+  padding: 40px;
 }
 
 .coastal {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
+  display: flex;
   gap: 20px;
 }
 
-.coastal-card {
-  flex: 1;
-}
-
-.coastal-card a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.coastal-card figure {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.coastal-card img {
-  width: 100%;
-  height: auto;
+.coastal a {
   display: block;
+  margin: 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
 }
 
-.coastal-card figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.coastal a:hover {
+  color: #009688;
+}
+
+.coastal figure {
+  margin: 0 20px;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.coastal figure:hover {
+  transform: scale(1.1);
+}
+
+.coastal img {
   width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+/***********page 2************/
+/*----------fresh page----*/
+/* style the form */
+.drink-order-form {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
+/* style the form labels */
+.drink-order-form label {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  text-align: left;
+}
+
+/* style the form inputs */
+.drink-order-form input[type=text], 
+.drink-order-form input[type=email], 
+.drink-order-form input[type=tel], 
+.drink-order-form textarea, 
+.drink-order-form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* style the form submit and reset buttons */
+.drink-order-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.drink-order-form button.submit-btn {
+  margin-right: 10px;
+}
+
+.drink-order-form button.reset-btn {
+  background-color: #f44336;
+}
+
+/* style the form heading and hr */
+.drink-order-form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.drink-order-form hr {
+  border: 1px solid #f2f2f2;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* style the drink list and nutrition sections */
+.drink-list-outer-div, .drink-nutrition-outer-div {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.drink-list-outer-div h2, .drink-nutrition-outer-div h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.scrollable {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.drink-list {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.drink-list th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.drink-list td {
+  padding: 12px 20px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.drink-list tr:hover {
+  background-color: #f2f2f2;
+}
+
+.drink-nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.drink-nutrition-table td {
+  padding: 12px 20px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.drink-nutrition-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.drink-nutrition-table tr:last-child {
+  border-bottom: none;
+}
+
+.drink-nutrition-outer-div {
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.drink-nutrition-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.drink-nutrition-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.drink-nutrition-table td h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.drink-nutrition-table td p {
+  font-size: 16px;
+  margin: 0;
+}

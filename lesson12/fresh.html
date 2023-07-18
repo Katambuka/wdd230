@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css" >
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
     <title>Carlsbad Bountiful Foods</title>
   </head>
@@ -26,11 +27,131 @@
             <li><a href="about.html" target="blank">About Us</a></li>
           </ul>
         </nav>
-      </div> v
+      </div>
     </header>
    <main>
       <div class="fruit-list">
-         <!-- Fruit items will be dynamically generated here -->
+        <form id="drink-form" class="form drink-order-form" onsubmit="return false">
+          <h2>Drink Order Form</h2>
+          <hr>    
+          <fieldset>
+              <label class="top">Name* <input type="text" id="user-name" name="user-name" required ></label>
+              <label class="top">Email*
+                  <input type="email" id="email" name="email" placeholder="someone@gmail.com" required ></label>
+              <label class="top">Cell phone number*
+                  <input type="tel" id = "cell-phone" name="cell-phone" placeholder="1235551234" required ></label>
+          
+              <label class="top">Select a fruit*
+                  <select name="Fruit-1" id="fruit-1" required>
+                      <option value="">--choose a fruit--</option>
+                  </select>
+              </label>
+              <label class="top">Select a fruit
+                  <select name="Fruit-2" id="fruit-2">
+                      <option value="">--choose a fruit--</option>
+                  </select>
+              </label>
+              <label class="top">Select a fruit
+                  <select name="Fruit-3" id="fruit-3">
+                      <option value="">--choose a fruit--</option>
+                  </select>
+              </label>
+              <label class="top">Special Instructions
+                  <textarea name="special-instructions" id = "special-instructions" rows="3" cols="23"></textarea>
+              </label>
+              <button id="get-drink-info-button" type="submit" class="submit-btn">Submit</button>
+              <button id="drink-form-reset" type="reset" class="submit-btn reset-btn">Clear Form</button>
+          </fieldset>    
+      </form>
+    
+        <div class="drink-list-outer-div center">
+          <h2>Your Drinks</h2>
+          <hr>
+          <div id="drink-list-inner-div" class="scrollable">
+            <table class="drink-list" id="drink-list-table-id">
+            </table>
+          </div>
+        </div>
+        <div class="drink-nutrition-outer-div">
+          <h2>Drink Nutrition</h2>
+          <hr>
+          <table class="drink-nutrition-table center" id="drink-nutrition-table-id">
+            <tr>
+              <td>
+                <h2>Date</h2>
+              </td>
+              <td id="drink-date-cell-id">
+                <p></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Name</h2>
+              </td>
+              <td id="drink-user-name-cell-id">
+                <p></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Email</h2>
+              </td>
+              <td id="drink-user-email-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Phone</h2>
+              </td>
+              <td id="drink-user-phone-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Fruits</h2>
+              </td>
+              <td id="drink-fruit-names-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Carbs</h2>
+              </td>
+              <td id="drink-carbs-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Protein</h2>
+              </td>
+              <td id="drink-protein-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Fat</h2>
+              </td>
+              <td id="drink-fat-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Sugar</h2>
+              </td>
+              <td id="drink-sugar-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Calories</h2>
+              </td>
+              <td id="drink-calories-cell-id"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Instructions</h2>
+              </td>
+              <td id="drink-special-instructions-cell-id"></td>
+            </tr>
+    
+          </table>
+    
+        </div>
+        <div id="drink-qr-outer-div" class="center margin20 drink-qr-outer-div">
+        </div>
       </div>
    </main>
    <footer>
@@ -39,8 +160,9 @@
         <a href="https://www.facebook.com/profile.php?id=100063537615114" target="_blank"><img src="images/facebook.png" alt="facebook" class="fb-logo"></a>
         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="linkedin-logo"></a>
       </div>
-      &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastmodified"></span> |All rights reserved by BYUI.
+      &copy;FlellaHarvest |<span id="year"></span> |Last Modified <span id="lastModified"></span> |All rights reserved by BYUI.
     </footer>
      <script src="scripts/main.js"></script>
+     <script src="scripts/fresh.js"></script>
 </body>
 </html>
