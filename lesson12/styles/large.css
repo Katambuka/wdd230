@@ -54,4 +54,19 @@
     .coastal {
       gap: 40px;
     }
+    footer {
+      padding: 10px;
+      color: #000;
+      text-align: center;
+      display: flex;
+      justify-items: start;
+      background: green;
+      flex-direction: row;
+    }
+    footer p {
+      display: block;
+      text-align: center;
+      padding: 10px ;
+      margin: 10px;
+    }
 }

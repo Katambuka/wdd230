@@ -1,6 +1,6 @@
 @media only screen and (min-width: 38rem) {
 	nav {
-		flex-direction: flex;
+		flex-direction: row;
 	}
 	
 	nav a {
@@ -14,7 +14,7 @@
 	}
 	.containerNav {
 		width: 100%;
-		padding: 0 20px;
+		padding: 20px;
 	 }
 	 .menu-left {
 		display: flex;
@@ -44,6 +44,14 @@
 		align-items: center;
 	 }
 	 
+   nav button {
+    display: none;
+  }
+  
+#hamburgerBtn {
+  display: none;
+}
+
 	 .menu-left li {
 		margin-left: 20px;
 	 }
