@@ -9,7 +9,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(#000 #fff tomato);
 }
 /* Style the header */
 .head {
@@ -322,9 +321,6 @@ section img {
 
 
 /***weather***/
-.mainp h2 {
-  margin: 0;
-}
 
 .weather {
   text-align: center;
@@ -464,7 +460,7 @@ footer {
   padding: 10px 0;
   color: #fff;
   text-align: center;
-  background: green;
+  background-color: green;
   margin-bottom: 0;
 }
 
@@ -609,8 +605,8 @@ a:hover {
 }
 
 .drink-order-form button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: green;
+  color: #fff;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -636,7 +632,7 @@ a:hover {
 }
 
 .drink-order-form hr {
-  border: 1px solid #f2f2f2;
+  border: 1px solid blue;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -667,8 +663,8 @@ a:hover {
 }
 
 .drink-list th {
-  background-color: #4CAF50;
-  color: white;
+  background-color: green;
+  color: #fff;
   font-weight: bold;
   padding: 12px 20px;
   border: none;
@@ -678,11 +674,11 @@ a:hover {
 .drink-list td {
   padding: 12px 20px;
   border: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
 }
 
 .drink-list tr:hover {
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .drink-nutrition-table {
@@ -695,11 +691,11 @@ a:hover {
 .drink-nutrition-table td {
   padding: 12px 20px;
   border: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
 }
 
 .drink-nutrition-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .drink-nutrition-table tr:last-child {
@@ -707,7 +703,7 @@ a:hover {
 }
 
 .drink-nutrition-outer-div {
-  background-color: #f9f9f9;
+  background-color:#fff;
   margin-top: 50px;
   padding: 20px;
 }
@@ -719,7 +715,7 @@ a:hover {
 
 .drink-nutrition-table td {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #f0f0f0;
 }
 
 .drink-nutrition-table td h2 {
