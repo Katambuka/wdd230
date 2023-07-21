@@ -9,6 +9,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(#000 #fff tomato);
 }
 /* Style the header */
 .head {
