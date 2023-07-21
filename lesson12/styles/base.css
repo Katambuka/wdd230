@@ -241,7 +241,7 @@ section img {
 
 .specialty-drinks {
   position: relative;
-  background-color: #fff;
+  background-color: green;
   text-align: center;
 }
 
@@ -322,6 +322,9 @@ section img {
 
 
 /***weather***/
+.mainp h2 {
+  margin: 0;
+}
 
 .weather {
   text-align: center;
@@ -331,7 +334,7 @@ section img {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #4CAF50;
+  color: green;
 }
 
 .weather-container {

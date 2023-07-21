@@ -41,6 +41,12 @@
       justify-content: left;
       padding: 20px 0;
     }
+
+    .mainp h2 {
+      margin: 0;
+      text-align: center;
+      justify-content: center;
+    }
     .forecast-day {
       flex: 0 0 calc(70.33% - 10px);
     }
