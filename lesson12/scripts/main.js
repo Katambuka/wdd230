@@ -60,48 +60,39 @@ fetch(
     console.error(error);
   });
 
-// Fetch 3-day forecast data
-fetch(
-  `https://api.openweathermap.org/data/2.5/forecast?q=${CITY_NAME}&units=imperial&appid=${API_KEY}`
-)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Failed to fetch forecast data");
+  function updateForecast(data) {
+    const daysofTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    for (let i = 0; i < 3; i++) {
+      const forecastDay = document.querySelector(`#day${i + 1}`);
+      const forecastDayHeading = forecastDay.querySelector(".forecast-day-heading");
+      const forecastTempHi = forecastDay.querySelector(`#day${i + 1}Hi`);
+      const forecastTempLo = forecastDay.querySelector(`#day${i + 1}Lo`);
+  
+      // Update the day of the week
+      const date = new Date(data.list[i * 8].dt_txt);
+      const dayOfWeek = daysofTheWeek[date.getDay()];
+      forecastDayHeading.textContent = dayOfWeek;
+  
+      // Update the highest and lowest temperatures
+      forecastTempHi.textContent = `Highest: ${data.list[i * 8].main.temp_max} °F`;
+      forecastTempLo.textContent = `Lowest: ${data.list[i * 8].main.temp_min} °F`;
     }
-    return response.json();
-  })
-  .then((data) => {
-    // Get the elements from the HTML
-    const day1Hi = document.querySelector("#day1Hi");
-    const day1Lo = document.querySelector("#day1Lo");
-    const day2Hi = document.querySelector("#day2Hi");
-    const day2Lo = document.querySelector("#day2Lo");
-    const day3Hi = document.querySelector("#day3Hi");
-    const day3Lo = document.querySelector("#day3Lo");
-
-    // Update the HTML with the forecast data
-    if (day1Hi) {
-      day1Hi.textContent = `${data.list[0].main.temp_max} °F`;
-    }
-    if (day1Lo) {
-      day1Lo.textContent = `${data.list[0].main.temp_min} °F`;
-    }
-    if (day2Hi) {
-      day2Hi.textContent = `${data.list[8].main.temp_max} °F`;
-    }
-    if (day2Lo) {
-      day2Lo.textContent = `${data.list[8].main.temp_min} °F`;
-    }
-    if (day3Hi) {
-      day3Hi.textContent = `${data.list[16].main.temp_max} °F`;
-    }
-    if (day3Lo) {
-      day3Lo.textContent = `${data.list[16].main.temp_min} °F`;
-    }
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+  }
+  
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${CITY_NAME}&units=imperial&appid=${API_KEY}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch forecast data");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      updateForecast(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  
 
   /****lazyloading*****/
   document.addEventListener("DOMContentLoaded", () => {
