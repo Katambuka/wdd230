@@ -1,71 +1,34 @@
 @media only screen and (min-width: 38rem) {
-	
-	nav a {
-		font-size: 1.1rem;
-	}
+  
+  nav button {
+     display: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav ul#primaryNav{
+     display: flex;
+     margin-left: 2vw;
+     justify-content: center;
+     border-right: 1px solid rgba(0, 0, 0, 0.3);
+     font-size: 24px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+     ;
+  }
+
+  nav ul li a {
+     border: none;
+     border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
 	main {
 		grid-template-columns: 1fr 1fr;
 	}
+
 	main img {
 		display: block;
 	}
-	.containerNav {
-		width: 100%;
-		padding: 20px;
-	 }
-	 .menu-left {
-		display: flex;
-		flex: 1;
-		justify-content: flex-start;
-	}
-
-   nav ul#primaryNav {
-      display: flex;
-      margin-left: 2vw;
-      justify-content: center;
-   }
-   nav ul li a {
-      border: none;
-   }
-	nav {
-		display: flex;
-		align-items: start;
-		justify-content: space-between;
-	 }
-	 
-	 .menu-left {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		align-items: center;
-	 }
-	 
-   nav button {
-    display: none;
-  }
-  
-#hamburgerBtn {
-  display: none;
-}
-
-	 .menu-left li {
-		margin-left: 20px;
-	 }
-	 
-	 .menu-left li a {
-		font-size: 18px;
-		font-weight: 400;
-		text-transform: uppercase;
-		color: #000;
-		text-decoration: none;
-		transition: color 0.3s ease-in-out;
-	 }
-	 
-	 .menu-left li a:hover {
-		color: #0077b5;
-	 }
-
     .forecast-day {
       flex: 0 0 calc(50% - 10px);
     }
@@ -78,6 +41,7 @@
       max-width: 600px;
       width: 100%;
     }
+
     .container {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -102,11 +66,7 @@
       display: flex;
       justify-content: flex-end;
     }
-    
-    #lastModified a:hover {
-      color: #ff0;
-    }
-    
+  
     .terms a {
       color: #fff;
       margin-left: 20px;

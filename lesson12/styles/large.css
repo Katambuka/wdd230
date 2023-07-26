@@ -1,41 +1,12 @@
 @media only screen and (min-width: 64rem) {
-	nav a {
-		font-size: 1.3rem;
-	}
-	.containerNav {
-	  width: 960px;
-	}
+  nav ul li a {
+     padding:0.5rem 1rem;
+  }
+  nav {
+    display: flex;
+  }
 
-	.menu-left {
-	  display: flex;
-	  flex: 1;
-	  justify-content: flex-start;
-	}
-	.nav-toggle {
-	  display: none;
-	}
-	.menu-right {
-	  display: flex;
-	  justify-content: flex-end;
-	  flex: 1;
-	}
-   .menu-left li {
-      margin-left: 1rem;
-    }
-  
-    #hamburgerBtn {
-      display: none;
-    }
-  
-    nav ul {
-      display: flex;
-    }
-  
-    #primaryNav {
-      margin-left: auto;
-    }
-
-    .abouts h2,h3 {
+  .abouts h2,h3 {
       margin: 20px auto;
       display: flex;
       justify-content: left;

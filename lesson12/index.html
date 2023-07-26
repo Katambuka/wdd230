@@ -16,23 +16,21 @@
   </head>
   <body>
    <header class="head">
-      <div class="containerNav">
         <nav id="navigation">
-          <a href="index.html" class="logo"><img src="images/GreenLogo.jpg" alt="logo"  width="95" height="45"></a>
+          <a href="index.html" class="logo"><img src="images/GreenLogo.jpg" alt="logo"  width="95" height="95"></a>
           <h1>Carlsbad</h1>
           <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-          <ul id="primaryNav" class="menu-left">
-            <li><a href="#index.html" target="blank">Home</a></li>
+          <ul id="primaryNav">
+            <li><a href="#index.html" target="blank" class="active">Home</a></li>
             <li><a href="fresh.html" target="blank">Fresh</a></li>
             <li><a href="about.html" target="blank">About Us</a></li>
           </ul>
-          <span id="lastModified">Todays date</span>
         </nav>
-      </div>
     </header>
    <main class="mainp">
     <div class="offers" id="offer">
       <span>Exclusive offers on fridays joins us for a 20% discount on our branches.</span>
+      <span id="lastModified"></span>
     </div>
     <section id="hero-banner">
       <div class="hero-text">
@@ -147,7 +145,7 @@
             <h2 class="forecast-heading" >3-Day Forecast</h2>
             <div class="forecast-container">
               <div class="day forecast-day" id="day1">
-                <h4 class="forecast-day-heading"></h4>
+                <h4 class="forecast-day-heading">Temps</h4>
                 <div class="forecast-day-info">
                   <p class="forecast-day-temp"></p>
                   <div class="forecast-day-temperature">
@@ -158,7 +156,7 @@
               </div>
 
               <div class="day forecast-day" id="day2">
-                <h4 class="forecast-day-heading"></h4>
+                <h4 class="forecast-day-heading">Temps</h4>
                 <div class="forecast-day-info">
                   <p class="forecast-day-temp"></p>
                   <div class="forecast-day-temperature">
@@ -169,7 +167,7 @@
               </div>
 
               <div class="day forecast-day" id="day3">
-                <h4 class="forecast-day-heading"></h4>
+                <h4 class="forecast-day-heading">Temps</h4>
                 <div class="forecast-day-info">
                   <p class="forecast-day-temp"></p>
                   <div class="forecast-day-temperature">
@@ -228,5 +226,6 @@
     </div>
   </footer>
    <script src="scripts/main.js"></script>
+   <script src="scripts/weather.js"></script>
   </body>
 </html>
