@@ -196,12 +196,10 @@ section img {
   transition: background-color 0.3s ease;
 }
 
-
 .button {
   background-color: #000;
   color: #fff;
 }
-
 
 /************Trending items***********/
 .product-heading {
@@ -447,7 +445,7 @@ footer > div > .terms {
 
 
 a:link {
-  color: #fff;
+  text-decoration: none;
 }
 
 a:hover {

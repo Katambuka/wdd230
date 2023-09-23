@@ -17,13 +17,13 @@ header {
   padding: 20px 20px 0px 20px;
   background-color: #0056b3;
 }
-.head div {
-  display: flex;
+.head {
   flex-flow: row;
   flex-direction: row;
   flex-wrap: initial;
   width: 100%;
 }
+
 #visits {
   color: #fff;
 }
@@ -71,8 +71,7 @@ nav button {
 }
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  padding-top: 0;
 }
 nav ul li a {
   display: block;
@@ -222,6 +221,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  float: right;
 }
 
 .socialmedia a {
@@ -239,6 +239,7 @@ p {
   list-style-type: none;
   padding: 10px;
   margin-right: 0;
+  float: right;
 }
 .socialmedia img {
   width: 50px;
